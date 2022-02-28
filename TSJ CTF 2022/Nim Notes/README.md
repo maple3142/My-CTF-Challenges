@@ -32,6 +32,8 @@ It simply submit the `<form>` with id `logout-form`, but the form in `templates/
 </form>
 ```
 
+> The source of this idea comes from [this tweet](https://twitter.com/oreha_senpai/status/1431947638878838786), BTW
+
 After directing the bot to your website, there are one intended solution and one unintended solution (much easier and less interesting) as far as I know.
 
 The intended solution is to use the fact that `setCookie` is vulnerable to CRLF Injection. Since `sign` function simply concat your message and hash together, your payload is directly passed into `setCookie` almost unmodified if you could success at login/register.
@@ -78,7 +80,7 @@ Then the flask server should prints the flag.
 
 ## Unintended Solution
 
-You first need to direct the bot to your website first too. But the CSRF part is different here.
+You need to direct the bot to your website first too. But the CSRF part is different here.
 
 The trick is that when your username contains `\0` (null byte), it will cause syntax error in Nim's sqlite library. This happens because it [didn't uses sqlite's prepared statement](https://github.com/nim-lang/Nim/blob/d7370ce26962b3b82e6b9be6562f6e88ba7ff86c/lib/impure/db_sqlite.nim#L214).
 
