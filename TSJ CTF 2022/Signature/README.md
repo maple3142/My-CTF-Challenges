@@ -21,7 +21,7 @@ Need to use two basic facts:
 * $a \oplus b = a + b - 2 (a \land b)$
 * For two n bits integer $a,b$, $a \land b = \sum_{i=0}^{n-1} 2^i a_i b_i$, where $a_i$ and $b_i$ is their n-th bit.
 
-So $k_i=d \oplus z_i$ can be written as $k_i=d+z-2 \sum_{j=0}^{n-1} d_i z_{ij}$. And it can be substituted back to $sk \equiv z+rd \pmod{n}$ to get a bunch of equations that have $d_i$ as their roots.
+So $k_i=d \oplus z_i$ can be written as $k_i=d+z_i-2 \sum_{j=0}^{n-1} d_i z_{ij}$. And it can be substituted back to $sk \equiv z+rd \pmod{n}$ to get a bunch of equations that have $d_i$ as their roots.
 
 In Secp256k1, $d$ is a 256 bit number. So in the [jonasnick/ecdsaPredictableNonce](https://github.com/jonasnick/ecdsaPredictableNonce), you can collect 256 signatures and solve $d_i$ with linear algebra.
 
