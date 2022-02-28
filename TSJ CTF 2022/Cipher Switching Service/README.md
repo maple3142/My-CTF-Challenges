@@ -1,6 +1,8 @@
 # Cipher Switching Service
 
 * Category: Crypto
+* Score: 416/500
+* Solves: 4/854
 
 ## Description
 

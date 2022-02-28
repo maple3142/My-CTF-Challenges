@@ -1,6 +1,8 @@
 # Nim Notes
 
 * Category: Web
+* Score: 500/500
+* Solves: 1/854
 
 ## Description
 

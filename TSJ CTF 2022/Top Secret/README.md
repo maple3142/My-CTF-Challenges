@@ -1,6 +1,8 @@
 # Top Secret
 
 * Category: Crypro
+* Score: 325/500
+* Solves: 9/854
 
 ## Description
 

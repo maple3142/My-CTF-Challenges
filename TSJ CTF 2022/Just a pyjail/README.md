@@ -1,6 +1,8 @@
 # Just a pyjail
 
 * Category: Misc (Pyjail)
+* Score: 500/500
+* Solves: 1/854
 
 ## Description
 

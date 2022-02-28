@@ -1,6 +1,8 @@
 # RNG++
 
 * Category: Crypto
+* Score: 213/500
+* Solves: 21/854
 
 > This is actually a broken version of `RNG+++`.
 

@@ -1,6 +1,8 @@
 # babyRSA
 
 * Category: Crypto
+* Score: 276/500
+* Solves: 13/854
 
 ## Description
 
