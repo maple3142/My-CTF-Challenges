@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/bootstrap.min.css" />
+		<title>Notes</title>
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+			<div class="container-fluid">
+				<span class="navbar-brand mb-0 h1">Notes</span>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" id="share-btn" href="javascript:void">Share To Admin</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="logout-btn" href="javascript:void">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- editing area -->
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-8">
+					<div class="mb-3">
+						<input id="title" class="form-control" placeholder="Title" />
+						<textarea
+							id="content"
+							class="form-control"
+							placeholder="e.g. I learned how to use `template` in Nim today :)"
+						></textarea>
+						<div class="d-grid gap-2">
+							<button class="btn btn-primary" id="add-btn">Add</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- note template -->
+		<template id="note-tmpl">
+			<div class="col-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="note-title card-title">title</h5>
+						<h6 class="note-author card-subtitle mb-2 text-muted">author</h6>
+						<p class="note-content card-text">text</p>
+					</div>
+				</div>
+			</div>
+		</template>
+
+		<!-- note container -->
+		<div class="container">
+			<div class="row" id="notes-container"></div>
+		</div>
+
+		<!-- footer -->
+		<div class="d-flex justify-content-md-center mt-auto">
+			<p>&copy; 2022-2087 All rights reserved.</p>
+		</div>
+
+		<!-- hidden logout form-->
+		<form hidden="true" id="logout-form" action="/logout" method="post"></form>
+
+		<!-- scripts and recaptcha -->
+		<div class="g-recaptcha" data-sitekey="$#" data-callback="tokenCallback" data-size="invisible"></div>
+		<script src="/js/purify.min.js"></script>
+		<script src="/js/marked.min.js"></script>
+		<script src="/js/app.js"></script>
+		<script async src="https://www.google.com/recaptcha/api.js"></script>
+	</body>
+</html>

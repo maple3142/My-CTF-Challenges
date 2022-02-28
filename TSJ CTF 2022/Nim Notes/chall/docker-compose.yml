@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+  web:
+    build:
+      context: ./web
+    init: true
+    environment:
+      - APP_KEY=app_key
+      - FLAG=TSJ{test_flag}
+      - ADMIN_PASS=admin
+      - RECAPTCHA_SITE_KEY=
+      - RECAPTCHA_SECRET=
+    ports:
+      - 80:80
+    networks:
+      - net
+    depends_on:
+      - redis
+  bot:
+    build:
+      context: ./bot
+    init: true
+    environment:
+      - CHALL_HOST=http://web
+      - ADMIN_PASS=admin
+    networks:
+      - net
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    networks:
+      - net
+networks:
+  net:
+    driver: bridge
