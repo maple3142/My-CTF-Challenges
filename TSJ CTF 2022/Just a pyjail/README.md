@@ -2,7 +2,7 @@
 
 * Category: Misc (Pyjail)
 * Score: 500/500
-* Solves: 1/854
+* Solves: 1/428
 
 ## Description
 

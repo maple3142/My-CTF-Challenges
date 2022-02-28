@@ -2,7 +2,7 @@
 
 * Category: Crypto
 * Score: 469/500
-* Solves: 2/854
+* Solves: 2/428
 
 > This upgraded version of `RNG++`, so you might want to read it before reading this.
 

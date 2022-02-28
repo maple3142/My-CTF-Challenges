@@ -2,7 +2,7 @@
 
 * Category: Crypto, CSC (Cursed Shaman Challenges, guessy challenges in TSJ CTF)
 * Score: 56/100 (CSC)
-* Solves: 14/854
+* Solves: 14/428
 
 ## Description
 

@@ -2,7 +2,7 @@
 
 * Category: Crypto
 * Score: 276/500
-* Solves: 13/854
+* Solves: 13/428
 
 ## Description
 

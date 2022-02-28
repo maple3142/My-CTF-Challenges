@@ -2,7 +2,7 @@
 
 * Category: Crypro
 * Score: 325/500
-* Solves: 9/854
+* Solves: 9/428
 
 ## Description
 
