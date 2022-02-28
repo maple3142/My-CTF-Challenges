@@ -45,7 +45,7 @@ def fast_forward(s, n, k):
     return int("".join(map(str, sn.polynomial().list())).ljust(127, "0"), 2)
 ```
 
-The next step is to observe that the first 16 bytes of PNG is known, not just 8 bytes, because of the IDHR chunk. Xor the first chunk of ciphertext and the first 16 bytes of PNG gives second state of the cipher. This can be written as:
+The next step is to observe that the first 16 bytes of PNG is known, not just 8 bytes, because of the IHDR chunk. Xor the first chunk of ciphertext and the first 16 bytes of PNG gives second state of the cipher. This can be written as:
 
 $$
 s_1 = x^{key} s_0 \implies s_1 s_0^{-1} = x^key
