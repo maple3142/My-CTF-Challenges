@@ -36,6 +36,8 @@ It simply submit the `<form>` with id `logout-form`, but the form in `templates/
 
 > The source of this idea comes from [this tweet](https://twitter.com/oreha_senpai/status/1431947638878838786), BTW
 
+> Update: @splitline said this technique always exist at [a challenge](https://gist.github.com/bluepichu/3ea50dfe412d13d9a7cd01e909856e4c#file-bfnote) from TWCTF 2020
+
 After directing the bot to your website, there are one intended solution and one unintended solution (much easier and less interesting) as far as I know.
 
 The intended solution is to use the fact that `setCookie` is vulnerable to CRLF Injection. Since `sign` function simply concat your message and hash together, your payload is directly passed into `setCookie` almost unmodified if you could success at login/register.
