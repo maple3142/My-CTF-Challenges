@@ -24,7 +24,7 @@ This is some challenges I created for CTF competitions.
 
 ## ImaginaryCTF
 
-| Name                                                              | Category | Tags                     | Difficulty |
-| ----------------------------------------------------------------- | -------- | ------------------------ | ---------- |
-| [Really Simple Algorithm](<ImaginaryCTF/Really Simple Algorithm>) | Crypto   | RSA, Continued Fractions | ★★         |
-| [Minimal](<ImaginaryCTF/Minimal>)                                 | Pwn      | Stack pivoting, SROP     | ★★         |
+| Name                                                              | Category | Tags                                       | Difficulty |
+| ----------------------------------------------------------------- | -------- | ------------------------------------------ | ---------- |
+| [Really Simple Algorithm](<ImaginaryCTF/Really Simple Algorithm>) | Crypto   | RSA, Continued Fractions                   | ★★         |
+| [Minimal](<ImaginaryCTF/Minimal>)                                 | Pwn      | Stack pivoting, read(2) return value, SROP | ★★         |
