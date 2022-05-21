@@ -5,6 +5,7 @@ This is some challenges I created for CTF competitions.
 ## TSJ CTF 2022
 
 > It is recommended to read Crypto writeups [here](https://blog.maple3142.net/2022/02/28/tsjctf-2021-writeups/), because it supports math rendering.
+> 2022/05/22: GitHub supports MathJax rendering on GitHub now, but it still have some compatibility issues, so you might still want to use the url above when having issues.
 
 | Name                                                                | Category    | Tags                                      | Difficulty |
 |---------------------------------------------------------------------|-------------|-------------------------------------------|------------|
