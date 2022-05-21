@@ -8,7 +8,7 @@ This is some challenges I created for CTF competitions.
 > 2022/05/22: GitHub supports MathJax rendering on GitHub now, but it still have some compatibility issues, so you might still want to use the url above when having issues.
 
 | Name                                                                | Category    | Tags                                      | Difficulty |
-|---------------------------------------------------------------------|-------------|-------------------------------------------|------------|
+| ------------------------------------------------------------------- | ----------- | ----------------------------------------- | ---------- |
 | [Futago](<TSJ CTF 2022/Futago>)                                     | Crypto, CSC | RSA                                       | ★          |
 | [RNG++](<TSJ CTF 2022/RNG++>)                                       | Crypto      | LCG                                       | ★★         |
 | [babyRSA](<TSJ CTF 2022/babyRSA>)                                   | Crypto      | RSA, ECC                                  | ★★         |
@@ -21,3 +21,10 @@ This is some challenges I created for CTF competitions.
 | [Just a pyjail](<TSJ CTF 2022/Just a pyjail>)                       | Misc        | Pyjail                                    | ★★★        |
 
 [1]: This challenge is made by both [@splitline](https://github.com/splitline/) and me.
+
+## ImaginaryCTF
+
+| Name                                                              | Category | Tags                     | Difficulty |
+| ----------------------------------------------------------------- | -------- | ------------------------ | ---------- |
+| [Really Simple Algorithm](<ImaginaryCTF/Really Simple Algorithm>) | Crypto   | RSA, Continued Fractions | ★★         |
+| [Minimal](<ImaginaryCTF/Minimal>)                                 | Pwn      | Stack pivoting, SROP     | ★★         |
