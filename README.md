@@ -29,7 +29,7 @@ This is some challenges I created for CTF competitions.
 | [Really Simple Algorithm](<ImaginaryCTF/Really Simple Algorithm>) | Crypto   | RSA, Continued Fractions                   | ★★         |
 | [Minimal](<ImaginaryCTF/Minimal>)                                 | Pwn      | Stack pivoting, read(2) return value, SROP | ★★         |
 
-# AIS3 Pre-exam 2022
+## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
 | ------------------------------------------------------------------- | -------- | ------------------------------------------- | ---------- |
