@@ -28,3 +28,20 @@ This is some challenges I created for CTF competitions.
 | ----------------------------------------------------------------- | -------- | ------------------------------------------ | ---------- |
 | [Really Simple Algorithm](<ImaginaryCTF/Really Simple Algorithm>) | Crypto   | RSA, Continued Fractions                   | ★★         |
 | [Minimal](<ImaginaryCTF/Minimal>)                                 | Pwn      | Stack pivoting, read(2) return value, SROP | ★★         |
+
+# AIS3 Pre-exam 2022
+
+| Name                                                                | Category | Tags                                        | Difficulty |
+| ------------------------------------------------------------------- | -------- | ------------------------------------------- | ---------- |
+| [JeetQode](<AIS3 Pre-exam 2022/JeetQode>)                           | Misc     | PPC, JQ                                     | ★☆         |
+| [B64DLE](<AIS3 Pre-exam 2022/B64DLE>)                               | Misc     | AES-CTR, Pickle, Python Format String       | ★★☆        |
+| [SC](<AIS3 Pre-exam 2022/SC>)                                       | Crypto   | Classic                                     | ☆          |
+| [Fast Cipher](<AIS3 Pre-exam 2022/Fast Cipher>)                     | Crypto   | Modular Arithmetic                          | ☆          |
+| [shamiko](<AIS3 Pre-exam 2022/shamiko>)                             | Crypto   | SHA1 Collision, DSA                         | ★☆         |
+| [Really Strange oRacle](<AIS3 Pre-exam 2022/Really Strange oRacle>) | Crypto   | GCD, Binomial Theorem                       | ★☆         |
+| [pettan](<AIS3 Pre-exam 2022/pettan>)                               | Crypto   | RSA Small Message, MT19937, Related Message | ★★☆        |
+| [pekobot](<AIS3 Pre-exam 2022/pekobot>)                             | Crypto   | Invalid Curve Attack                        | ★★★        |
+| [Flag Checker](<AIS3 Pre-exam 2022/Flag Checker>)                   | Reverse  | ROP, Pickle, Single Prime RSA               | ★★         |
+| [Private Browsing](<AIS3 Pre-exam 2022/Private Browsing>)           | Web      | SSRF, Redis, PHP Deserialization            | ★★         |
+| [UTF-8 Editor](<AIS3 Pre-exam 2022/UTF-8 Editor>)                   | Pwn      | C++, std::vector, OOB, GOT overwrite        | ★★         |
+| [SAAS](<AIS3 Pre-exam 2022/SAAS>)                                   | Pwn      | C++, Copy Constructor, UAF                  | ★★☆        |

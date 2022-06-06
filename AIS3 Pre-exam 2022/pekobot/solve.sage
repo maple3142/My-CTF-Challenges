@@ -1,0 +1,95 @@
+from pwn import *
+from sage.all import (
+    EllipticCurve,
+    Zmod,
+    crt,
+    discrete_log,
+    ZZ,
+    product,
+)
+import ast
+
+p = 2**256 - 2**224 + 2**192 + 2**96 - 1
+# fmt: off
+params = [(1, (111400716329737223151348215591382049163897085784802947255747133622415879105394, 39992761736411400081935771079229874378216016675324636692947348968013201165276), 115792089210356248762697446949407573529578712231346505346655645343696123459399, [71, 823, 1229, 7489, 30203, 1275057701]), (3, (34266504726973447486459180548292643487847724337670171426426712711400387750583, 60138371845611831098044044361051001381561906121645034148367646836258728425794), 57896044605178124381348723474703786764997697290226498635390133450806309414504, [8, 3, 7, 13, 37, 97, 113]), (4, (60994461011195962431939286456844848923647297199347611431191729822246532069553, 62426215642616303247152786006182702061125085742424406842130689349645400096097), 115792089210356248762697446949407573530301458765764575276748425375978192226668, [19, 179, 13003, 1307093479]), (5, (71313685395178834326364531604654869231864467434116851696884560517318161987679, 101821340297271060469660525972572910942517532355430866592133202449535450498864), 115792089210356248762697446949407573530623378430069411602317684396560437888076, [2447]), (6, (98328297292892910073911108288034018739288802240138328982286164487793843645967, 85875970977714582966534270743420950587010634395302449855090814348562252891660), 57896044605178124381348723474703786765170399658733765334296124169948290588710, [5, 4003, 16033, 102001]), (7, (32182267415664188206799024401454157828877342569034947936468251469301214685887, 81714608356807778323795954214457068204235719807356138251488922465561886798710), 57896044605178124381348723474703786764895334266363519119496655336633469253476, [1151, 7103]), (8, (52964478139609867925944358664879267005927312195945554573928053288055034858008, 28457342866386542781597316732785161846891520538541679020399804279100937535370), 115792089210356248762697446949407573530645391408947993867093428060464810786860, [81173])]
+# fmt: on
+
+io = process(["python", "server.py"], env={"FLAG": "FLAG{testing}"})
+# io = remote('localhost', 6001)
+io.recvuntil(b"watashi no public key: ")
+pub = ast.literal_eval(io.recvlineS())
+
+
+def xor(x, y):
+    return bytes([a ^ b for a, b in zip(x, y)])
+
+
+def point_to_bytes(x, y):
+    return x.to_bytes(32, "big") + y.to_bytes(32, "big")
+
+
+def bytes_to_point(b):
+    return int.from_bytes(b[:32], "big"), int.from_bytes(b[32:], "big")
+
+
+quotes = [
+    "Konpeko, konpeko, konpeko! Hololive san-kisei no Usada Pekora-peko! domo, domo!",
+    "Bun bun cha! Bun bun cha!",
+    "kitira!",
+    "usopeko deshou",
+    "HA↑HA↑HA↓HA↓HA↓",
+    "HA↑HA↑HA↑HA↑",
+    "it's me pekora!",
+    "ok peko",
+]
+
+
+def get_dlp(b, x, y):
+    E = EllipticCurve(Zmod(p), [-3, b])
+    G = E(x, y)
+    io.sendlineafter(b"> ", b"1")
+    io.sendlineafter(b"x: ", str(x).encode())
+    io.sendlineafter(b"y: ", str(y).encode())
+    ct = bytes.fromhex(io.recvlineS().strip())
+    for m in quotes:
+        xy = xor(m.encode().ljust(64, b"\0"), ct)
+        try:
+            P = E(*bytes_to_point(xy))
+            return P, G
+        except:
+            pass
+
+
+io.sendlineafter(b"> ", b"2")
+E = EllipticCurve(
+    Zmod(p),
+    [-3, 41058363725152142129326129780047268409114441015993725554835256314039467401291],
+)
+C1 = E(*bytes_to_point(bytes.fromhex(io.recvlineS().strip())))
+C2 = bytes.fromhex(io.recvlineS().strip())
+print(C1)
+print(C2)
+
+
+def get_d():
+    rs = []
+    mods = []
+    for b, (x, y), od, subgroups in params:
+        print(f"Trying y^2 = x^3 - 3x + {b}")
+        P, G = get_dlp(b, x, y)
+        for f in subgroups:
+            print(f"Solving dlp for group size = {f}")
+            s = od // f
+            x = discrete_log(s * P, s * G, ord=ZZ(f), operation="+")
+            print(f"d = {x} (mod {f})")
+            rs.append(x)
+            mods.append(f)
+    return crt(rs, mods), product(mods)
+
+
+d, m = get_d()
+print(f"d = {d} (mod {m})")
+
+S = d * C1
+key = point_to_bytes(*map(int, S.xy()))
+print(xor(key, C2))
