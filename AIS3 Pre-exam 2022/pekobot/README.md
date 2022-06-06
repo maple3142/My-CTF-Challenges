@@ -68,7 +68,7 @@ $$
 由此可見一個 Short Weierstrass curve 在做 scalar multiplication 時並沒有使用到 $b$，
 因此對一個 $P \notin E$ 的點做 scalar multiplication 相當於在另一個 $b' \neq b$ 的 $E': y^2 = x^3 + ax + b'$ 上運算。
 
-這會帶來的問題是 $E'$ 通常和特別選過的 $E$ 不同，它的 curve order $\#(E')=n$ 分解後不一定都有個 large prime order subgroup 存在。當 $E'$ 上存在一個 order 為 $f$ 的 small subgroup 時，我們可以將原本 $Q=dP$ 的問題轉換成 $(n/f)Q=d((n/f)P)$，然後就能在短時間內解出 $d \bmod{f}$ 的值。
+這會帶來的問題是 $E'$ 通常和特別選過的 $E$ 不同，它的 curve order $\\#(E')=n$ 分解後不一定都有個 large prime order subgroup 存在。當 $E'$ 上存在一個 order 為 $f$ 的 small subgroup 時，我們可以將原本 $Q=dP$ 的問題轉換成 $(n/f)Q=d((n/f)P)$，然後就能在短時間內解出 $d \bmod{f}$ 的值。
 
 所以只要有多個夠小的 $f_1, f_2, f_3, \cdots$，利用上面的方法找出 $d_i \equiv d \pmod{f_i}$，然後利用 CRT 就能算出 $d \bmod{\prod_{i=1}^{b} f_i}$ 的結果。因此要得到真正的 $d$ 就得找出足夠多的 $f_i$ 使得 $\prod_{i=1}^{b} f_i > n > d$ 才行。
 
@@ -76,7 +76,7 @@ $$
 
 這題原先的曲線 $E$ 是 NIST P-256，所以我先將 $a$ 固定，然後暴力搜尋其他不同的 $b'$ 得到 $E'$，把夠小的 $f_i$ 紀錄下來。這部分可以參考 [find_curves.sage](find_curves.sage)。
 
-為了減少之後的計算量，我把 $b'$, $E'$ 上的 generator $G'$, $\#(E')$ 還有 $f_i$ 都記錄了下來
+為了減少之後的計算量，我把 $b'$, $E'$ 上的 generator $G'$, $\\#(E')$ 還有 $f_i$ 都記錄了下來
 
 剩下就是利用這些預先計算好的參數，將各個 $E'$ 的 $G'$ 當作 public key $P$ 傳給 oracle，然後得到 $Q=dP$，然後用前面的方法得到 $d \equiv d \pmod{f_i}$ 的值，最後使用 CRT 求回 $d$ 即可。
 
