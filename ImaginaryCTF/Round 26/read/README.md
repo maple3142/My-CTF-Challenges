@@ -1,6 +1,6 @@
 # Read
 
-* Round: 26 (2022/10)
+* Round: 26 (2022/09)
 * Category: Pwn
 * Points: 125
 * Solves: 6

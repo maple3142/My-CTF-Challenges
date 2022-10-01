@@ -1,6 +1,6 @@
 # Not a kernel pwn
 
-* Round: 26 (2022/10)
+* Round: 26 (2022/09)
 * Category: Misc
 * Points: 100
 * Solves: 3

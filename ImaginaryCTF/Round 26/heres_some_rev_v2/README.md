@@ -1,6 +1,6 @@
 # Here's some Rev v2
 
-* Round: 26 (2022/10)
+* Round: 26 (2022/09)
 * Category: Reverse
 * Points: 75
 * Solves: 17

@@ -1,6 +1,6 @@
 # pqqp
 
-* Round: 26 (2022/10)
+* Round: 26 (2022/09)
 * Category: Crypto
 * Points: 75
 * Solves: 39
