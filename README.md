@@ -45,3 +45,9 @@ This is some challenges I created for CTF competitions.
 | [Private Browsing](<AIS3 Pre-exam 2022/Private Browsing>)           | Web      | SSRF, Redis, PHP Deserialization            | ★★         |
 | [UTF-8 Editor](<AIS3 Pre-exam 2022/UTF-8 Editor>)                   | Pwn      | C++, std::vector, OOB, GOT overwrite        | ★★         |
 | [SAAS](<AIS3 Pre-exam 2022/SAAS>)                                   | Pwn      | C++, Copy Constructor, UAF                  | ★★☆        |
+
+## Security BSides Ahmedabad CTF 2022
+
+| Name                                                                      | Category | Tags | Difficulty |
+| ------------------------------------------------------------------------- | -------- | ---- | ---------- |
+| [A complex number](<Security BSides Ahmedabad CTF 2022/A complex number>) | Crypto   | LLL  | ★★☆        |
