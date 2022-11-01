@@ -44,6 +44,16 @@ This is some challenges I created for CTF competitions.
 | [Here's some Rev v2](<ImaginaryCTF/Round 26/heres_some_rev_v2>) | Reverse  | Pyc                   | ☆          |
 | [Here's some Rev v3](<ImaginaryCTF/Round 26/heres_some_rev_v3>) | Reverse  | LCG                   | ★          |
 
+### Round 27
+
+| Name                                                     | Category | Tags                       | Difficulty |
+| -------------------------------------------------------- | -------- | -------------------------- | ---------- |
+| [RSA-CBC](<ImaginaryCTF/Round 27/rsa-cbc>)               | Crypto   | RSA                        | ☆          |
+| [RSA-CBC v2](<ImaginaryCTF/Round 27/rsa-cbc-v2>)         | Crypto   | RSA, Coppersmith           | ★☆         |
+| [Mobius](<ImaginaryCTF/Round 27/mobius>)                 | Crypto   | Rational Function, LLL     | ★★☆        |
+| [Hello World as a Service](<ImaginaryCTF/Round 27/haas>) | Misc     | Java, Quirks               | ★☆         |
+| [Baby Shell](<ImaginaryCTF/Round 27/baby_shell>)         | Pwn      | C++, std::string_view, UAF | ★          |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
