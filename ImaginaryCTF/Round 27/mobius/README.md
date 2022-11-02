@@ -53,8 +53,7 @@ M^{-n}
 \begin{bmatrix}
 \text{target} \\
 1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 u \\
 v
@@ -92,3 +91,39 @@ p & 0 \\
 $$
 
 have a short vector $(x,y)$, which can be found by LLL.
+
+## Alternative Solution for the last part
+
+From
+
+$$
+\frac{x}{y} \equiv r \pmod{p}
+$$
+
+we know that
+
+$$
+x r^{-1} \equiv y \pmod{p}
+$$
+
+Remove the modulus, we get
+
+$$
+x r^{-1} = y + kp \approx kp
+$$
+
+Rearrange it we get
+
+$$
+\frac{x}{k} \approx \frac{p}{r^{-1}}
+$$
+
+The error is
+
+$$
+\frac{y}{k r^{-1}} < \frac{1}{2k^2}
+$$
+
+So $\frac{x}{k}$ is a convergents of $\frac{p}{r^{-1}}$, and we can approxiate it by continued fraction.
+
+> Credits: this solution is found by @w0152
