@@ -52,7 +52,7 @@ So you will solve ECDLP in $E(\mathbb{Z}/p^2\mathbb{Z})$ and $E(\mathbb{Z}/q^2\m
 
 Per @rkm0959, you can also solve ECDLP without factoring $n$ too. It uses the same proposition 19 by simply replacing that $q$ with `gift` and it actually works correctly here.
 
-### Solving A variant of Hidden Subset Sum Problem
+### Solving a variant of Hidden Subset Sum Problem
 
 Let the ECDLP results of each points in `chimera` with respect to $G$ be $b_i$, and the `randint(1, n)` in `[randint(1, n) * lion_head for _ in range(16)]` be $x_i$, then we will get the following system:
 
