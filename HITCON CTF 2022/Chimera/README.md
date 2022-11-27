@@ -63,8 +63,7 @@ x_0 \\
 x_1 \\
 \vdots \\
 x_{15}
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 b_0 \\
 b_1 \\
