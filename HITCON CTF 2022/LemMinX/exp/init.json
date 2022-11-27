@@ -1,0 +1,54 @@
+{
+	"processId": 0,
+	"trace": "verbose",
+	"clientInfo": {
+		"name": "peko",
+		"version": "8.7.6.3"
+	},
+	"rootPath": "/tmp",
+	"rootUri": "file:///tmp",
+	"initializationOptions": {
+		"settings": {
+			"xml": {
+				"useCache": false
+			}
+		}
+	},
+	"capabilities": {
+		"textDocument": {
+			"hover": {
+				"dynamicRegistration": false,
+				"contentFormat": ["markdown", "plaintext"]
+			},
+			"documentLink": {
+				"dynamicRegistration": false,
+				"tooltipSupport": true
+			},
+			"codeAction": {
+				"codeActionLiteralSupport": {
+					"codeActionKind": {
+						"valueSet": ["quickfix"]
+					}
+				},
+				"isPreferredSupport": true,
+				"dataSupport": true,
+				"resolveSupport": {
+					"properties": ["edit"]
+				}
+			},
+			"synchronization": {
+				"dynamicRegistration": false,
+				"willSave": true,
+				"willSaveWaitUntil": true,
+				"didSave": true
+			}
+		},
+		"workspace": {
+			"configuration": true,
+			"workspaceFolders": true,
+			"executeCommand": {
+				"dynamicRegistration": true
+			}
+		}
+	}
+}

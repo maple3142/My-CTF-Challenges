@@ -22,6 +22,16 @@ This is some challenges I created for CTF competitions.
 
 [1]: This challenge is made by both [@splitline](https://github.com/splitline/) and me.
 
+## HITCON CTF 2022
+
+| Name                                           | Category    | Tags                                           | Difficulty |
+| ---------------------------------------------- | ----------- | ---------------------------------------------- | ---------- |
+| [BabySSS](<HITCON CTF 2022/BabySSS>)           | Crypto      | SSS, CRT                                       | ★☆         |
+| [Superprime](<HITCON CTF 2022/Superprime>)     | Crypto      | Binary Search, Prune and Search                | ★★☆        |
+| [Chimera](<HITCON CTF 2022/Chimera>)           | Crypto      | ECM, LLL/Coppersmith, ECDLP, Hidden Subset Sum | ★★★★       |
+| [LemMinX](<HITCON CTF 2022/LemMinX>)           | Misc        | LSP, XXE                                       | ★★★        |
+| [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, RSA, dlog, DOMPurify, CSP               | ★★★★       |
+
 ## ImaginaryCTF
 
 | Name                                                              | Category | Tags                                       | Difficulty |

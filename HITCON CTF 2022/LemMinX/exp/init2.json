@@ -1,0 +1,74 @@
+{
+	"processId": 60936,
+	"clientInfo": {
+		"name": "Visual Studio Code",
+		"version": "1.71.0"
+	},
+	"locale": "en",
+	"rootPath": "/tmp",
+	"rootUri": "file:///tmp",
+	"capabilities": {
+		"textDocument": {
+			"hover": {
+				"dynamicRegistration": false,
+				"contentFormat": ["markdown", "plaintext"]
+			},
+			"documentLink": {
+				"dynamicRegistration": false,
+				"tooltipSupport": true
+			},
+			"codeAction": {
+				"codeActionLiteralSupport": {
+					"codeActionKind": {
+						"valueSet": ["quickfix"]
+					}
+				},
+				"isPreferredSupport": true,
+				"dataSupport": true,
+				"resolveSupport": {
+					"properties": ["edit"]
+				}
+			},
+			"synchronization": {
+				"dynamicRegistration": false,
+				"willSave": true,
+				"willSaveWaitUntil": true,
+				"didSave": true
+			}
+		},
+		"workspace": {
+			"configuration": true,
+			"workspaceFolders": true,
+			"executeCommand": {
+				"dynamicRegistration": true
+			}
+		}
+	},
+	"initializationOptions": {
+		"settings": {
+			"xml": {
+				"server": {
+					"workDir": "/tmp/peko"
+				},
+				"trace": {
+					"server": "verbose"
+				},
+				"logs": {
+					"client": true,
+					"file": "PLACEHOLDER"
+				},
+				"useCache": true,
+				"telemetry": {
+					"enabled": false
+				}
+			}
+		}
+	},
+	"trace": "verbose",
+	"workspaceFolders": [
+		{
+			"uri": "file:///tmp",
+			"name": "challenges"
+		}
+	]
+}
