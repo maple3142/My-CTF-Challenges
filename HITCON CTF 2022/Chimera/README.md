@@ -32,9 +32,9 @@ Once you have $n$, it is easy to solve for $a, b$ from 2 points.
 
 ### Factoring $n$ with `gift`
 
-`gift` is defined as $\#E(\mathbb{F}_p) \times \#E(\mathbb{F}_q)$, so any points on $E(\mathbb{Z}/n\mathbb{Z})$ multiply by `gift` will be point at infinity.
+`gift` is defined as $\\#E(\mathbb{F}_p) \times \\#E(\mathbb{F}_q)$, so any points on $E(\mathbb{Z}/n\mathbb{Z})$ multiply by `gift` will be point at infinity.
 
-If you try to divide `gift` by some small factors then it might be and multiple of $\#E(\mathbb{F}_p)$ but not $\#E(\mathbb{F}_q)$, and multiply it to a point on $E(\mathbb{Z}/p\mathbb{Z})$ will give you an error when computing the inverse. So you can use gcd to get a non-trivial factor of $n$.
+If you try to divide `gift` by some small factors then it might be and multiple of $\\#E(\mathbb{F}_p)$ but not $\\#E(\mathbb{F}_q)$, and multiply it to a point on $E(\mathbb{Z}/p\mathbb{Z})$ will give you an error when computing the inverse. So you can use gcd to get a non-trivial factor of $n$.
 
 Actually, this is the core idea of [Lenstra elliptic-curve factorization](https://en.wikipedia.org/wiki/Lenstra_elliptic-curve_factorization).
 
