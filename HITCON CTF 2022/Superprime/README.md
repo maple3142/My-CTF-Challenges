@@ -10,7 +10,7 @@ Yet another cool prime generation method.
 
 ## Overview
 
-Let $f(x)$ be `bytes_to_long(str(p).encode())`, `getSuperPrime` generates a pair of prime $(p, f(p))$.
+Let $f(x)$ be `bytes_to_long(str(x).encode())`, `getSuperPrime` generates a pair of primes $(p, f(p))$.
 
 And we are given five RSA semiprimes to factor:
 
