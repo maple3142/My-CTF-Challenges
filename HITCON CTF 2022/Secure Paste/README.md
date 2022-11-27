@@ -95,7 +95,7 @@ Now we know that we can control the decryption algorithm name and the decryption
 
 * `AES-CTR`: You can control $16+i$ bytes with $256^i$ bruteforce
 * `AES-CBC`: You can control $32$ bytes (source: Team justCatTheFish)
-* `RSA-OAEP`: You can control at $\log_{256}n$ most, and $n$ have roughly the same length as the ciphertext.
+* `RSA-OAEP`: You can control at most $\lfloor \log_{256} n \rfloor$ bytes, and $n$ have roughly the same length as the ciphertext.
 
 So my intended solution use `RSA-OAEP`, which can be rephrased into:
 
@@ -176,3 +176,20 @@ The main blocker of my exploit working on Chromium is because they have a strict
 ### Why not Firefox 106+?
 
 Most of my exploit still works in Firefox 106+, but the *Stealing the secret paste* part doesn't work for some unknown reasons. I tested it and found that when the `attacker` tab use `history.back()`, then the `opener` in `w1` will simply become `null`. I am not sure if this is a Firefox bug or a new privacy feature, but it is still a blocker for my exploit.
+
+## Other Solutions
+
+### IcesFont @ idek
+
+Source: [a message in HITCON CTF Discord](https://discord.com/channels/915238696494723102/1046425362567016478/1046438792833286174)
+
+Have 4 tabs `a -> b -> c -> d`:
+
+* `a` simply `history.back()`
+* `b` have many frames with name being base64 charset
+* `c` do nothing
+* `d` navigates `c` to JSONP payload `opener[opener.opener.location.hash[i]].focus`
+
+So by detecting the focus, we can leak the decryption key char by char.
+
+Also, it is possible to do the same to leak `document.cookie` because I forgot to set `token` cookie to `HttpOnly`. :bonk:
