@@ -1,8 +1,8 @@
 # Superprime
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 248/500
+* Solves: 33
 
 ## Description
 

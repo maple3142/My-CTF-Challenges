@@ -1,8 +1,8 @@
 # BabySSS
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 172/500
+* Solves: 94
 
 ## Description
 

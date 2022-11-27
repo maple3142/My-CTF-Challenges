@@ -1,8 +1,8 @@
 # Chimera
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 400/500
+* Solves: 4
 
 ## Description
 
