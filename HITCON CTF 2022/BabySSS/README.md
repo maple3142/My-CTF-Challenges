@@ -22,6 +22,6 @@ $$
 
 So for each shares $(x_i, y_i)$ we can derive an equation $y \equiv a_0 \pmod{x}$, and use [Chinese Remainder Theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem) to get $a_0 \mod{\operatorname{lcm}(x_0, x_1, \cdots)}$.
 
-With some testing we can see the LCM of those $x$ is much bigger than $2^{64}$, so we already know the exact value of $a_0$ (a.k.a. constant term of $f(x)$).
+With some testing we can see the LCM of those $x$ is much bigger than $2^{64}$, so we already know the exact value of $a_0$ (aka constant term of $f(x)$).
 
 By doing the same with $(x_i, (y_i - a_0) / x_i)$ we can get $a_1$. Repeat this to recover all the coefficients and we can get the secret.

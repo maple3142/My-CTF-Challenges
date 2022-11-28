@@ -30,7 +30,7 @@ This is some challenges I created for CTF competitions.
 | [Superprime](<HITCON CTF 2022/Superprime>)     | Crypto      | Binary Search, Prune and Search                | ★★☆        |
 | [Chimera](<HITCON CTF 2022/Chimera>)           | Crypto      | ECM, LLL/Coppersmith, ECDLP, Hidden Subset Sum | ★★★★       |
 | [LemMinX](<HITCON CTF 2022/LemMinX>)           | Misc        | LSP, XXE                                       | ★★★        |
-| [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, RSA, dlog, DOMPurify, CSP               | ★★★★       |
+| [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, Cipher Suite Confusion, DOMPurify, CSP  | ★★★★       |
 
 ## ImaginaryCTF
 
