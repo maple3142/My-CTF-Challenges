@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  web:
+    image: php:7.4-apache
+    init: true
+    volumes:
+      - ./src:/var/www/html
+      - ./flag.txt:/flag.txt
+    ports:
+      - 8763:80
