@@ -70,7 +70,8 @@ These two challenges are created before I became a board of ImaginaryCTF.
 
 | Name                                                   | Category | Tags         | Difficulty |
 | ------------------------------------------------------ | -------- | ------------ | ---------- |
-| [Unchanged](<ImaginaryCTF/Round 28/Unchanged>)          | Reverse  | pthread, LCG | ★☆         |
+| [Substitution](<ImaginaryCTF/Round 28/Substitution>)   | Crypto   | RSA, Search  | ★☆         |
+| [Unchanged](<ImaginaryCTF/Round 28/Unchanged>)         | Reverse  | pthread, LCG | ★☆         |
 | [Filter Master](<ImaginaryCTF/Round 28/Filter Master>) | Web      | PHP, filter  | ★★         |
 | [Half FFT](<ImaginaryCTF/Round 28/Half FFT>)           | Misc     | FFT, LLL     | ★★☆        |
 
