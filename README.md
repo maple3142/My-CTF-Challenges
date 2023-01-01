@@ -75,6 +75,16 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Filter Master](<ImaginaryCTF/Round 28/Filter Master>) | Web      | PHP, filter  | ★★         |
 | [Half FFT](<ImaginaryCTF/Round 28/Half FFT>)           | Misc     | FFT, LLL     | ★★☆        |
 
+### Round 29
+
+| Name                                                                 | Category | Tags                        | Difficulty |
+| -------------------------------------------------------------------- | -------- | --------------------------- | ---------- |
+| [Strong Prime](<ImaginaryCTF/Round 29/Strong Prime>)                 | Crypto   | DLP, CRT                    | ★☆         |
+| [Web3](<ImaginaryCTF/Round 29/Web3>)                                 | Crypto   | Ethereum, ECDLP             | ★★         |
+| [Req Bin](<ImaginaryCTF/Round 29/Req Bin>)                           | Web      | Python Format String, Flask | ★☆         |
+| [Generic Flag Checker](<ImaginaryCTF/Round 29/Generic Flag Checker>) | Reverse  | Signal Handler              | ★☆         |
+| [xkcd 835](<ImaginaryCTF/Round 29/xkcd 835>)                         | Pwn      | UAF                         | ★★         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |

@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  chall:
+    image: strong_prime
+    build:
+      context: .
+    ports:
+      - 1337:1337
+    environment:
+      - FLAG=ictf{it_is_not_so_strong_isn't_it?}
+    restart: always
