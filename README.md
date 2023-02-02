@@ -85,6 +85,15 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Generic Flag Checker](<ImaginaryCTF/Round 29/Generic Flag Checker>) | Reverse  | Signal Handler              | ★☆         |
 | [xkcd 835](<ImaginaryCTF/Round 29/xkcd 835>)                         | Pwn      | UAF                         | ★★         |
 
+### Round 30
+
+| Name                                                   | Category | Tags              | Difficulty |
+| ------------------------------------------------------ | -------- | ----------------- | ---------- |
+| [PowerRSA](<ImaginaryCTF/Round 30/Power RSA>)          | Crypto   | RSA               | ★          |
+| [Easy DSA: LCG](<ImaginaryCTF/Round 30/Easy DSA: LCG>) | Crypto   | ECDSA, LCG, LLL   | ★★☆        |
+| [Fake Flags](<ImaginaryCTF/Round 30/Fake flags>)       | Web      | Trolling          | ☆          |
+| [Echo](<ImaginaryCTF/Round 30/Echo>)                   | Web      | Request Smuggling | ★☆         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
