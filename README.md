@@ -111,6 +111,16 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [UTF-8 Editor](<AIS3 Pre-exam 2022/UTF-8 Editor>)                   | Pwn      | C++, std::vector, OOB, GOT overwrite        | ★★         |
 | [SAAS](<AIS3 Pre-exam 2022/SAAS>)                                   | Pwn      | C++, Copy Constructor, UAF                  | ★★☆        |
 
+## AIS3 EOF 2023 - koh-jeopardy
+
+| Name                                                                    | Category | Tags                  | Difficulty |
+| ----------------------------------------------------------------------- | -------- | --------------------- | ---------- |
+| [Shamiko no fukushuu](<AIS3 EOF 2023/koh-jeopardy/shamiko_no_fukushuu>) | Crypto   | ECDSA, Hmac collision | ★          |
+| [onelinecrypto](<AIS3 EOF 2023/koh-jeopardy/onelinecrypto>)             | Crypto   | RSA, LSB              | ★          |
+| [NotLFSR](<AIS3 EOF 2023/koh-jeopardy/NotLFSR>)                         | Crypto   | LFSR                  | ★☆         |
+| [magicRSA](<AIS3 EOF 2023/koh-jeopardy/magicRSA>)                       | Crypto   | RSA                   | ★☆         |
+| [Neo RSA](<AIS3 EOF 2023/koh-jeopardy/neo_rsa>)                         | Crypto   | RSA, coppersmith      | ★★         |
+
 ## Security BSides Ahmedabad CTF 2022
 
 | Name                                                                      | Category | Tags | Difficulty |

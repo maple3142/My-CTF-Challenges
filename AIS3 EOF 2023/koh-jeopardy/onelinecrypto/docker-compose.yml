@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  chall:
+    build:
+      context: .
+    ports:
+      - 10011:10011
+    environment:
+      - FLAG=EOF{super_easy_rsa_lsb_attack}
+    restart: always

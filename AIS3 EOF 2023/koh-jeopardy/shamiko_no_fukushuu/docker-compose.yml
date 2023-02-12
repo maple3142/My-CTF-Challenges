@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  chall:
+    build:
+      context: .
+    ports:
+      - 10006:10006
+    environment:
+      - FLAG=EOF{very_easy_hmac_key_collision}
+    restart: always
