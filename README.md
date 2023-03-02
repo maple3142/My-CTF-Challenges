@@ -94,6 +94,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Fake Flags](<ImaginaryCTF/Round 30/Fake flags>)       | Web      | Trolling          | ☆          |
 | [Echo](<ImaginaryCTF/Round 30/Echo>)                   | Web      | Request Smuggling | ★☆         |
 
+### Round 31
+
+| Name                                 | Category | Tags       | Difficulty |
+| ------------------------------------ | -------- | ---------- | ---------- |
+| [KVIN](<ImaginaryCTF/Round 31/KVIN>) | Web/Misc | JavaScript | ★★         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |

@@ -1,0 +1,9 @@
+{
+  "name": "kvin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "kvin": "1.2.13"
+  }
+}
