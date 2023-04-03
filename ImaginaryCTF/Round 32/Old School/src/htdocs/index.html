@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Old school regex matching service</title>
+	</head>
+	<body>
+		<div>
+            <h1>Regex Matcher</h1>
+			<form action="/cgi-bin/match" method="POST" target="result">
+				<div>
+					<label>Text to search from</label>
+					<input name="text" value="red_flags_and_fake_flags_form_an_equivalence_class" />
+				</div>
+				<div>
+					<label>Regex</label>
+					<input name="regex" value="f.ags" />
+				</div>
+				<button type="submit">Match</button>
+			</form>
+			<iframe name="result"></iframe>
+		</div>
+		<div>
+            <h1>Download logs (Admin only)</h1>
+			<form action="/cgi-bin/getlogs" method="POST">
+				<div>
+					<label>Target</label>
+					<input name="target" />
+				</div>
+				<button type="submit">Download</button>
+			</form>
+		</div>
+	</body>
+</html>

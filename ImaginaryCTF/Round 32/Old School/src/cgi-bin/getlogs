@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+. utils
+
+if [[ $session = $ADMIN_SESSION ]]; then
+    echo "Content-Disposition: attachment; filename=\"logs.tar\""
+    echo ""
+    target=$(get_param target)
+    tar -cf - /tmp/log/$target
+    exit
+else
+    echo "Content-type: text/plain"
+    echo ""
+    echo "You are not admin"
+    exit
+fi

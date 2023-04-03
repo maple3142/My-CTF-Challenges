@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+. utils
+echo "Content-type: text/plain"
+echo ""
+
+mkdir -p /tmp/log/$session
+echo $body >> /tmp/log/$session/$(date +%s).log
+
+text=$(get_param text)
+regex=$(get_param regex)
+echo $text | grep -Eo $regex | head -n1

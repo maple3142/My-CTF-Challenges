@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  web:
+    image: httpd:2.4
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./cgi-bin:/usr/local/apache2/cgi-bin
+      - ./htdocs:/usr/local/apache2/htdocs
+      - ./readflag:/readflag
+      - ./flag:/flag
+      - ./start.sh:/start.sh
+    environment:
+      - ADMIN_SESSION=REDACTED
+    ports:
+      - 8763:80
+    entrypoint: /start.sh
+    init: true

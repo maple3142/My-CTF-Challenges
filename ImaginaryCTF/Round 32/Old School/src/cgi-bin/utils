@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+body="$(cat)"
+
+function get_param() {
+    echo "$body" | awk -v RS='&' -v FS='=' "{ if (\$1 == \"$1\") print \$2 }" | tr -d '\n'
+}
+
+function get_cookie {
+    echo "${HTTP_COOKIE:-}" | awk -v RS='; ' -v FS='=' "{ if (\$1 == \"$1\") print \$2 }" | tr -d '\n'
+}
+
+session="$(get_cookie session)"
+if [[ -z $session ]]; then
+    session="$(head -c32 /dev/urandom | base64 | sed 's|[=/+]||g')"
+    echo "Set-Cookie: session=$session; path=/; HttpOnly"
+fi
+if [[ ! $session =~ ^[a-zA-Z0-9]+$ ]]; then
+   echo "Content-type: text/plain"
+   echo ""
+   echo "Invalid session $session"
+   exit
+fi

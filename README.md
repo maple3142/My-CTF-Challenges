@@ -100,6 +100,13 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | ------------------------------------ | -------- | ---------- | ---------- |
 | [KVIN](<ImaginaryCTF/Round 31/KVIN>) | Web/Misc | JavaScript | ★★         |
 
+### Round 32
+
+| Name                                             | Category | Tags      | Difficulty |
+| ------------------------------------------------ | -------- | --------- | ---------- |
+| [Poly RSA](<ImaginaryCTF/Round 32/Poly RSA>)     | Crypto   | RSA, GCD  | ★★         |
+| [Old School](<ImaginaryCTF/Round 32/Old School>) | Web      | Bash, CGI | ★☆         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
