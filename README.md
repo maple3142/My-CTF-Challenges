@@ -107,6 +107,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Poly RSA](<ImaginaryCTF/Round 32/Poly RSA>)     | Crypto   | RSA, GCD  | ★★         |
 | [Old School](<ImaginaryCTF/Round 32/Old School>) | Web      | Bash, CGI | ★☆         |
 
+### Round 33
+
+| Name                                   | Category | Tags       | Difficulty |
+| -------------------------------------- | -------- | ---------- | ---------- |
+| [Vault](<ImaginaryCTF/Round 33/Vault>) | Web      | XSS, Cache | ★★☆        |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
