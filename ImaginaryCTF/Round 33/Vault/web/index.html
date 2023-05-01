@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="simple.min.css">
+		<title>Vault</title>
+	</head>
+	<body>
+		<div>
+			<h1>Vault</h1>
+			<p>You can safely put your secret in this vault here!</p>
+			<textarea id="ta"></textarea>
+            <button id="btn">Save</button>
+		</div>
+        <div>
+            <p>If you find any bug, please report it to the admin!</p>
+            <form action="/report" method="POST" id="frm">
+                <label>URL</label>
+                <input name="url" type="text">
+                <button>Report</button>
+            </form>
+        </div>
+		<script src="app.js"></script>
+	</body>
+</html>
