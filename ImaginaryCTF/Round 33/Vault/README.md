@@ -32,3 +32,7 @@ Host: ictf2.maple3142.net
 ```
 
 This use the fact that `$uri` is normalized path without query string, so it will be normalized to `/lmao.html`, therefore it will return the HTML as from cache too. CSP bypass is basically the same, expect you don't need to use another cache poisoning for that as it is possible to construct valid without encoded characters.
+
+## Alternative Solution by @lebr0nli
+
+Since `$uri` is normalized path, you can just `curl '.../<h1>peko</h1>'` to force it into the cache, and visit `/<h1>peko</h1>` from browser to get it return HTML. Even if browser encodes `<` and `>` to `%3E` and `%3C`, it will still work as nginx will decode it before cache lookup.
