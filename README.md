@@ -122,13 +122,23 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [SC](<AIS3 Pre-exam 2022/SC>)                                       | Crypto   | Classic                                     | ☆          |
 | [Fast Cipher](<AIS3 Pre-exam 2022/Fast Cipher>)                     | Crypto   | Modular Arithmetic                          | ☆          |
 | [shamiko](<AIS3 Pre-exam 2022/shamiko>)                             | Crypto   | SHA1 Collision, DSA                         | ★☆         |
-| [Really Strange oRacle](<AIS3 Pre-exam 2022/Really Strange oRacle>) | Crypto   | GCD, Binomial Theorem                       | ★☆         |
+| [Really Strange orAcle](<AIS3 Pre-exam 2022/Really Strange orAcle>) | Crypto   | GCD, Binomial Theorem                       | ★☆         |
 | [pettan](<AIS3 Pre-exam 2022/pettan>)                               | Crypto   | RSA Small Message, MT19937, Related Message | ★★☆        |
 | [pekobot](<AIS3 Pre-exam 2022/pekobot>)                             | Crypto   | Invalid Curve Attack                        | ★★★        |
 | [Flag Checker](<AIS3 Pre-exam 2022/Flag Checker>)                   | Reverse  | ROP, Pickle, Single Prime RSA               | ★★         |
 | [Private Browsing](<AIS3 Pre-exam 2022/Private Browsing>)           | Web      | SSRF, Redis, PHP Deserialization            | ★★         |
 | [UTF-8 Editor](<AIS3 Pre-exam 2022/UTF-8 Editor>)                   | Pwn      | C++, std::vector, OOB, GOT overwrite        | ★★         |
 | [SAAS](<AIS3 Pre-exam 2022/SAAS>)                                   | Pwn      | C++, Copy Constructor, UAF                  | ★★☆        |
+
+## AIS3 Pre-exam 2023
+
+| Name                                                  | Category | Tags                | Difficulty |
+| ----------------------------------------------------- | -------- | ------------------- | ---------- |
+| [ECC](<AIS3 Pre-exam 2023/ECC>)                       | Crypto   | ECC                 | ★          |
+| [Not Wiener](<AIS3 Pre-exam 2023/Not Wiener>)         | Crypto   | RSA, Coppersmith    | ★★         |
+| [Media Server](<AIS3 Pre-exam 2023/Not Wiener>)       | Misc     | Python http, procfs | ★★         |
+| [Gitly](<AIS3 Pre-exam 2023/Not Wiener>)              | Web      | 0day                | ★          |
+| [Password Generator](<AIS3 Pre-exam 2023/Not Wiener>) | Pwn      | Math, ROP           | ★☆         |
 
 ## AIS3 EOF 2023 - koh-jeopardy
 
