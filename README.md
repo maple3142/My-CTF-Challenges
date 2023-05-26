@@ -136,9 +136,9 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | ----------------------------------------------------- | -------- | ------------------- | ---------- |
 | [ECC](<AIS3 Pre-exam 2023/ECC>)                       | Crypto   | ECC                 | ★          |
 | [Not Wiener](<AIS3 Pre-exam 2023/Not Wiener>)         | Crypto   | RSA, Coppersmith    | ★★         |
-| [Media Server](<AIS3 Pre-exam 2023/Not Wiener>)       | Misc     | Python http, procfs | ★★         |
-| [Gitly](<AIS3 Pre-exam 2023/Not Wiener>)              | Web      | 0day                | ★          |
-| [Password Generator](<AIS3 Pre-exam 2023/Not Wiener>) | Pwn      | Math, ROP           | ★☆         |
+| [Media Server](<AIS3 Pre-exam 2023/Media Server>)       | Misc     | Python http, procfs | ★★         |
+| [Gitly](<AIS3 Pre-exam 2023/Gitly>)              | Web      | 0day                | ★          |
+| [Password Generator](<AIS3 Pre-exam 2023/Password Generator>) | Pwn      | Math, ROP           | ★☆         |
 
 ## AIS3 EOF 2023 - koh-jeopardy
 
