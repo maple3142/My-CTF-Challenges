@@ -113,6 +113,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | -------------------------------------- | -------- | ---------- | ---------- |
 | [Vault](<ImaginaryCTF/Round 33/Vault>) | Web      | XSS, Cache | ★★☆        |
 
+### Round 34
+
+| Name                                           | Category | Tags                 | Difficulty |
+| ---------------------------------------------- | -------- | -------------------- | ---------- |
+| [Integrity](<ImaginaryCTF/Round 34/Integrity>) | Crypto   | CRT-RSA, Coppersmith | ★☆         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
@@ -132,12 +138,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 
 ## AIS3 Pre-exam 2023
 
-| Name                                                  | Category | Tags                | Difficulty |
-| ----------------------------------------------------- | -------- | ------------------- | ---------- |
-| [ECC](<AIS3 Pre-exam 2023/ECC>)                       | Crypto   | ECC                 | ★          |
-| [Not Wiener](<AIS3 Pre-exam 2023/Not Wiener>)         | Crypto   | RSA, Coppersmith    | ★★         |
-| [Media Server](<AIS3 Pre-exam 2023/Media Server>)       | Misc     | Python http, procfs | ★★         |
-| [Gitly](<AIS3 Pre-exam 2023/Gitly>)              | Web      | 0day                | ★          |
+| Name                                                          | Category | Tags                | Difficulty |
+| ------------------------------------------------------------- | -------- | ------------------- | ---------- |
+| [ECC](<AIS3 Pre-exam 2023/ECC>)                               | Crypto   | ECC                 | ★          |
+| [Not Wiener](<AIS3 Pre-exam 2023/Not Wiener>)                 | Crypto   | RSA, Coppersmith    | ★★         |
+| [Media Server](<AIS3 Pre-exam 2023/Media Server>)             | Misc     | Python http, procfs | ★★         |
+| [Gitly](<AIS3 Pre-exam 2023/Gitly>)                           | Web      | 0day                | ★          |
 | [Password Generator](<AIS3 Pre-exam 2023/Password Generator>) | Pwn      | Math, ROP           | ★☆         |
 
 ## AIS3 EOF 2023 - koh-jeopardy
