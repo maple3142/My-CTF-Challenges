@@ -3,7 +3,7 @@
 * Round: 30 (2023/01)
 * Category: Crypto
 * Points: 75
-* Solves: 
+* Solves: 25
 
 ## Description
 
