@@ -1,0 +1,20 @@
+version: '3'
+services:
+  service:
+    image: alpine/socat
+    ports:
+      - 9999:3000
+    command: "TCP-LISTEN:3000,fork,reuseaddr TCP:real_service:3000"
+    networks:
+      - default
+      - chall
+  real_service:
+    build: .
+    image: encrypted-command-executor
+    volumes:
+      - ./flag:/flag
+    networks:
+      - chall
+networks:
+  chall:
+    internal: true
