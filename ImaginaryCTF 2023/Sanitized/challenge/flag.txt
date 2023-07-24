@@ -1,0 +1,1 @@
+ictf{this_challenge_is_meant_to_show_that_xhtml_is_not_html_so_this_is_not_a_dompurify_0day}

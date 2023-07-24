@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Sanitized</title>
+		<script src="purify.min.js"></script>
+		<link rel="stylesheet" href="simple.css" />
+	</head>
+	<body>
+		<div>
+			<h1>Sanitized</h1>
+			<form>
+				<label for="html">HTML</label>
+				<textarea name="html" id="html"></textarea>
+				<button type="Submit">Go</button>
+			</form>
+		</div>
+		<div>
+			<h2>Display Area</h2>
+			<div id="display"></div>
+		</div>
+		<script src="main.js"></script>
+		<div>
+			<h2>Report</h2>
+			<form action="/report" method="POST" id="report-form">
+				<p>Did you find something wrong on this website? Please report it to the admin here!</p>
+				<label for="html">HTML</label>
+				<input type="text" name="html" id="html-input" />
+				<button type="Submit">Go</button>
+			</form>
+		</div>
+		<script src="report.js"></script>
+		<!-- /source -->
+	</body>
+</html>

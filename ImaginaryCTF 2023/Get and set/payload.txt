@@ -1,0 +1,10 @@
+__reduce_ex__
+__class__.__class_getitem__
+__class__.3.0
+newobj
+newobj.__getattribute__
+__class__.__class_getitem__
+__class__.__builtins__.exec
+__class__.__getattr__
+import os; os\.system('sh')
+unused

@@ -32,6 +32,20 @@ This is some challenges I created for CTF competitions.
 | [LemMinX](<HITCON CTF 2022/LemMinX>)           | Misc        | LSP, XXE                                       | ★★★        |
 | [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, Cipher Suite Confusion, DOMPurify, CSP  | ★★★★       |
 
+## ImaginaryCTF 2023
+
+| Name                                                       | Category | Tags             | Difficulty |
+| ---------------------------------------------------------- | -------- | ---------------- | ---------- |
+| [Tan](<ImaginaryCTF 2023/Tan>)                             | Crypto   | LLL              | ★★         |
+| [Wasteful](<ImaginaryCTF 2023/Wasteful>)                   | Crypto   | RSA, Coppersmith | ★★         |
+| [Sus](<ImaginaryCTF 2023/Sus>)                             | Crypto   | RSA, Math        | ★★☆        |
+| [Imaginary Casino](<ImaginaryCTF 2023/Imaginary Casino>)   | Crypto   | CSIDH, RNG       | ★★☆        |
+| [Login](<ImaginaryCTF 2023/Login>)                         | Web      | PHP              | ★☆         |
+| [Sanitized](<ImaginaryCTF 2023/Sanitized>)                 | Web      | DOMPurify, XHTML | ★★★        |
+| [Sanitized Revenge](<ImaginaryCTF 2023/Sanitized Revenge>) | Web      | DOMPurify, XHTML | ★★★        |
+| [Typechecker](<ImaginaryCTF 2023/Typechecker>)             | Reverse  | TypeScript, Math | ★★         |
+| [Get and set](<ImaginaryCTF 2023/Get and set>)             | Misc     | Pyjail           | ★★         |
+
 ## ImaginaryCTF
 
 | Name                                                              | Category | Tags                                       | Difficulty |

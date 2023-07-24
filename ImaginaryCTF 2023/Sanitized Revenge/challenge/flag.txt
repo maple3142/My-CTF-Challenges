@@ -1,0 +1,1 @@
+ictf{no_more_cheese_using_%2f..%2f_so_you_must_bypass_dompurify}

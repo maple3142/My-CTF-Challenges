@@ -1,0 +1,11 @@
+{
+  "name": "sanitized",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.1",
+    "puppeteer": "^20.8.0"
+  }
+}
