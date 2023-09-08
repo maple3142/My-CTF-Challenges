@@ -133,6 +133,18 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | ---------------------------------------------- | -------- | -------------------- | ---------- |
 | [Integrity](<ImaginaryCTF/Round 34/Integrity>) | Crypto   | CRT-RSA, Coppersmith | ★☆         |
 
+### Round 35
+
+| Name                                                                             | Category | Tags | Difficulty |
+| -------------------------------------------------------------------------------- | -------- | ---- | ---------- |
+| [Encrypted Command Executor](<ImaginaryCTF/Round 35/Encrypted Command Executor>) | Crypto   | ECB  | ★          |
+
+### Round 37
+
+| Name                                                                 | Category     | Tags | Difficulty |
+| -------------------------------------------------------------------- | ------------ | ---- | ---------- |
+| [You can't reverse me](<ImaginaryCTF/Round 37/You can't reverse me>) | Misc/Reverse | Hook | ★☆         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
