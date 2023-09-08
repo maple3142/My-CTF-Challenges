@@ -1,0 +1,6 @@
+services:
+  chall:
+    build: .
+    privileged: true
+    ports:
+      - "9898:5000"
