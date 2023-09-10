@@ -1,8 +1,8 @@
 # EZRSA
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 327/500
+* Solves: 11
 
 ## Description
 

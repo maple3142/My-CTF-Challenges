@@ -1,8 +1,8 @@
 # Harmony
 
 * Category: Web
-* Score: ?/500
-* Solves: ?
+* Score: 450/500
+* Solves: 2
 
 ## Description
 

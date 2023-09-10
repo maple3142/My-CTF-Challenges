@@ -1,8 +1,8 @@
 # Canvas
 
 * Category: Web
-* Score: ?/500
-* Solves: ?
+* Score: 400/500
+* Solves: 4
 
 ## Description
 

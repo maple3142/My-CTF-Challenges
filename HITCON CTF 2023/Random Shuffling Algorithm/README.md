@@ -1,8 +1,8 @@
 # Random Shuffling Algorithm
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 321/500
+* Solves: 12
 
 ## Description
 

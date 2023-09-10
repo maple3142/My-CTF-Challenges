@@ -1,8 +1,8 @@
 # Login System
 
 * Category: Web
-* Score: ?/500
-* Solves: ?
+* Score: 360/500
+* Solves: 7
 
 ## Description
 

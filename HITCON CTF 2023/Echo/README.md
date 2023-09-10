@@ -1,8 +1,8 @@
 # Echo
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 284/500
+* Solves: 20
 
 ## Description
 

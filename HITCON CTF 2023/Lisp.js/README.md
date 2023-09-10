@@ -1,8 +1,8 @@
 # Lisp.js
 
 * Category: Misc
-* Score: ?/500
-* Solves: ?
+* Score: 342/500
+* Solves: 9
 
 ## Description
 

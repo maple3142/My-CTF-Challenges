@@ -1,8 +1,8 @@
 # Share
 
 * Category: Crypto
-* Score: ?/500
-* Solves: ?
+* Score: 222/500
+* Solves: 47
 
 ## Description
 
