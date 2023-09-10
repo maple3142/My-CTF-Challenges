@@ -1,0 +1,1 @@
+hitcon{this_is_actually_just_a_stupid_RSA_based_MAC_so_this_has_nothing_to_do_with_public_key_cryptography}

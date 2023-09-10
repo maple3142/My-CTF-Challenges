@@ -32,6 +32,20 @@ This is some challenges I created for CTF competitions.
 | [LemMinX](<HITCON CTF 2022/LemMinX>)           | Misc        | LSP, XXE                                       | ★★★        |
 | [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, Cipher Suite Confusion, DOMPurify, CSP  | ★★★★       |
 
+## HITCON CTF 2023
+
+| Name                                                                       | Category | Tags                               | Difficulty |
+| -------------------------------------------------------------------------- | -------- | ---------------------------------- | ---------- |
+| [Share](<HITCON CTF 2023/Share>)                                           | Crypto   | SSS, CRT                           | ★★         |
+| [EZRSA](<HITCON CTF 2023/EZRSA>)                                           | Crypto   | ECC, Wiener, ECM                   | ★★☆        |
+| [Echo](<HITCON CTF 2023/Echo>)                                             | Crypto   | RSA, Index Calculus, LLL           | ★★★        |
+| [Random Shuffling Algorithm](<HITCON CTF 2023/Random Shuffling Algorithm>) | Crypto   | Noisy CRT, Coppersmith             | ★★★☆       |
+| [Collision](<HITCON CTF 2023/Collision>)                                   | Crypto   | Code Review, Python Hash Collision | ★★★☆       |
+| [Lisp.js](<HITCON CTF 2023/Lisp.js>)                                       | Misc     | Node.js Jail                       | ★★★        |
+| [Login System](<HITCON CTF 2023/Login System>)                             | Web      | TE.TE, JSON Injection, YAML        | ★★★        |
+| [Canvas](<HITCON CTF 2023/Canvas>)                                         | Web      | JS Jail, Worker, CSP               | ★★★☆       |
+| [Harmony](<HITCON CTF 2023/Harmony>)                                       | Web      | Electron                           | ★★★★☆      |
+
 ## ImaginaryCTF 2023
 
 | Name                                                       | Category | Tags             | Difficulty |

