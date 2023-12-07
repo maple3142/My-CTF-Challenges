@@ -1,0 +1,8 @@
+services:
+  chall:
+    build: .
+    privileged: true
+    ports:
+      - "1337:5000"
+    volumes:
+      - ./flag.txt:/srv/app/flag.txt:ro

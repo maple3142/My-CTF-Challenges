@@ -1,0 +1,8 @@
+services:
+  chall:
+    build: .
+    privileged: true
+    ports:
+      - "7331:5000"
+    environment:
+      - JAIL_ENV_FLAG=ictf{the_answer_to_the_1337th_universe_is_15682...36957}

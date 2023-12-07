@@ -159,6 +159,18 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | -------------------------------------------------------------------- | ------------ | ---- | ---------- |
 | [You can't reverse me](<ImaginaryCTF/Round 37/You can't reverse me>) | Misc/Reverse | Hook | ★☆         |
 
+### Round 39
+
+| Name                                               | Category | Tags   | Difficulty |
+| -------------------------------------------------- | -------- | ------ | ---------- |
+| [Safe Pickle](<ImaginaryCTF/Round 39/Safe Pickle>) | Misc     | Pickle | ★☆         |
+
+### Round 40
+
+| Name                                                   | Category | Tags | Difficulty |
+| ------------------------------------------------------ | -------- | ---- | ---------- |
+| [Leet Universe](<ImaginaryCTF/Round 40/Leet Universe>) | Crypto   | Math | ★★         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
