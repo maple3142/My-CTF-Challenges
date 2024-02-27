@@ -214,6 +214,16 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [magicRSA](<AIS3 EOF 2023/koh-jeopardy/magicRSA>)                       | Crypto   | RSA                   | ★☆         |
 | [Neo RSA](<AIS3 EOF 2023/koh-jeopardy/neo_rsa>)                         | Crypto   | RSA, coppersmith      | ★★         |
 
+## AIS3 EOF 2024
+
+| Name                                                                 | Category | Tags                  | Difficulty |
+| -------------------------------------------------------------------- | -------- | --------------------- | ---------- |
+| [Baby Side Channel Attack](<AIS3 EOF 2024/Baby Side Channel Attack>) | Crypto   | SCA, RSA              | ★          |
+| [Baby ECDLP](<AIS3 EOF 2024/Baby ECDLP>)                             | Crypto   | Math, ECDLP           | ★☆         |
+| [Baby XOR](<AIS3 EOF 2024/Baby XOR>)                                 | Crypto   | Linear Algebra, LLL   | ★★★        |
+| [Internal](<AIS3 EOF 2024/Internal>)                                 | Web      | Nginx, CRLF Injection | ★          |
+
+
 ## Security BSides Ahmedabad CTF 2022
 
 | Name                                                                      | Category | Tags | Difficulty |
