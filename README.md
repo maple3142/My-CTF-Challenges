@@ -175,7 +175,7 @@ These two challenges are created before I became a board of ImaginaryCTF.
 
 | Name                                                 | Category | Tags | Difficulty |
 | ---------------------------------------------------- | -------- | ---- | ---------- |
-| [Three Pieces](<ImaginaryCTF/Round 42/Three Pieces>) | Crypto   | Math | ★☆         |
+| [Three Pieces](<ImaginaryCTF/Round 43/Three Pieces>) | Crypto   | Math | ★☆         |
 
 ## AIS3 Pre-exam 2022
 
