@@ -171,11 +171,11 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | ------------------------------------------------------ | -------- | ---- | ---------- |
 | [Leet Universe](<ImaginaryCTF/Round 40/Leet Universe>) | Crypto   | Math | ★★         |
 
-### Round 42
+### Round 43
 
-| Name                                      | Category | Tags | Difficulty |
-| ----------------------------------------- | -------- | ---- | ---------- |
-| [s](<ImaginaryCTF/Round 42/Three Pieces>) | Crypto   | Math | ★☆         |
+| Name                                                 | Category | Tags | Difficulty |
+| ---------------------------------------------------- | -------- | ---- | ---------- |
+| [Three Pieces](<ImaginaryCTF/Round 42/Three Pieces>) | Crypto   | Math | ★☆         |
 
 ## AIS3 Pre-exam 2022
 
