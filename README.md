@@ -177,6 +177,14 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | ---------------------------------------------------- | -------- | ---- | ---------- |
 | [Three Pieces](<ImaginaryCTF/Round 43/Three Pieces>) | Crypto   | Math | ★☆         |
 
+
+### Round 44
+
+| Name                                               | Category | Tags        | Difficulty |
+| -------------------------------------------------- | -------- | ----------- | ---------- |
+| [Flag Server](<ImaginaryCTF/Round 44/Flag Server>) | Web      | HTTP Cookie | ★★☆        |
+| [FLT-1337](<ImaginaryCTF/Round 44/FLT-1337>)       | Misc     | Sage Trivia | ☆          |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |

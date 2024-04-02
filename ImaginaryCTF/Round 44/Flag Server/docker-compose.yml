@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: flag
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - FLAG=${FLAG:-flag{this_is_a_test_flag}
+      - PUBLIC_HOST=http://flag.1337.cx/
+      - PYTHONUNBUFFERED=TRUE
+    restart: unless-stopped

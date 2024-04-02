@@ -1,0 +1,8 @@
+services:
+  chall:
+    build: .
+    privileged: true
+    ports:
+      - "7331:5000"
+    environment:
+      - JAIL_ENV_FLAG=ictf{can_you_show_me_how_you_disproved_FLT?}
