@@ -1,4 +1,4 @@
-# Vault
+# Integrity
 
 * Round: 34 (2023/05)
 * Category: Crypto
