@@ -62,3 +62,13 @@ Since $\phi$ is the order of $E(\mathbb{Z}_n)$ for $1/4$ of $a$ in $y^2=x^3+ax$,
 If you understand what the original is trying to do, you will know that $2U_p, 2U_q$ are the trace of $E(\mathbb{F}_p), E(\mathbb{F}_q)$ respectively. So by choosing $a$ properly, it is easy to get $u_p, v_p, u_q, v_q$ by telling sage to compute the trace.
 
 Once you have all these, it is easy to decrypt anything you want, so you can pass the challenge to get the flag.
+
+### Alternative solution factor $n$
+
+> @Neobeo:
+> it's the same as this, but you don't need e for part 4. construct a random (cx, cy), then decrypt it via oracle and via the known d. these two plaintexts will be the same mods p and q with probability 1/4 each
+> so you can factorise, and thus sum of squares, and thus create phi withotu e
+
+[link to the Discord message](https://discord.com/channels/915238696494723102/1046425374814380042/1150688587277410335)
+
+![image to Neobeo's message in HITCON CTF Discord server](neobeo_alt_solution.png)
