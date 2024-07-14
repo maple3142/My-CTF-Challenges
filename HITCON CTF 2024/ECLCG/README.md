@@ -1,8 +1,8 @@
 # ECLCG
 
 * Category: Crypto
-* Score: /500
-* Solves: 
+* Score: 421/500
+* Solves: 3
 
 ## Description
 

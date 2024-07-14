@@ -1,8 +1,8 @@
 # MatProd
 
 * Category: Crypto
-* Score: /500
-* Solves: 
+* Score: 500/500
+* Solves: 1
 
 ## Description
 

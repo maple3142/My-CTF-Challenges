@@ -1,8 +1,8 @@
 # Flag Reader
 
 * Category: Misc
-* Score: /500
-* Solves: 
+* Score: 271/500
+* Solves: 24
 
 ## Description
 

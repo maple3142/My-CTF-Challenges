@@ -1,8 +1,8 @@
 # Hyper512
 
 * Category: Crypto
-* Score: /500
-* Solves: 
+* Score: 371/500
+* Solves: 6
 
 ## Description
 
