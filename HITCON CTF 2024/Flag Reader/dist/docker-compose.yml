@@ -1,0 +1,9 @@
+services:
+  chall:
+    build: .
+    image: flag_reader
+    privileged: true
+    ports:
+      - "22222:5000"
+    volumes:
+      - ./flag.txt:/srv/flag.txt  # you may want to create a flag.txt if it doesn't exist

@@ -46,6 +46,20 @@ This is some challenges I created for CTF competitions.
 | [Canvas](<HITCON CTF 2023/Canvas>)                                         | Web      | JS Jail, Worker, CSP               | ★★★☆       |
 | [Harmony](<HITCON CTF 2023/Harmony>)                                       | Web      | Electron                           | ★★★★☆      |
 
+## HITCON CTF 2024
+
+| Name                                                     | Category | Tags                    | Difficulty |
+| -------------------------------------------------------- | -------- | ----------------------- | ---------- |
+| [ZKPoF](<HITCON CTF 2024/ZKPoF>)                         | Crypto   | Python, Coppersmith     | ★★         |
+| [BrokenShare](<HITCON CTF 2024/BrokenShare>)             | Crypto   | SSS, LLL                | ★★★        |
+| [Hyper512](<HITCON CTF 2024/Hyper512>)                   | Crypto   | LFSR, FCA               | ★★★☆       |
+| [ECLCG](<HITCON CTF 2024/ECLCG>)                         | Crypto   | ECDSA, LCG, LLL         | ★★★★       |
+| [MatProd](<HITCON CTF 2024/MatProd>)                     | Crypto   | Linear Algebra, LLL     | ★★★★       |
+| [Flag Reader](<HITCON CTF 2024/Flag Reader>)             | Misc     | Tar                     | ★☆         |
+| [RClonE](<HITCON CTF 2024/RClonE>)                       | Web      | CSRF, RCE               | ★★         |
+| [Truth of NPM](<HITCON CTF 2024/Truth of NPM>)           | Web      | Deno, LFI, RCE          | ★★★        |
+| [Private Browsing+](<HITCON CTF 2024/Private Browsing+>) | Web      | XSS, Response Splitting | ★★★★       |
+
 ## ImaginaryCTF 2023
 
 | Name                                                       | Category | Tags             | Difficulty |

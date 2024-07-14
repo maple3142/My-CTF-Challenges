@@ -1,0 +1,9 @@
+services:
+  chall:
+    build: .
+    image: zkpof
+    privileged: true
+    ports:
+      - "11111:5000"
+    environment:
+      - JAIL_ENV_FLAG=flag{fake_flag}
