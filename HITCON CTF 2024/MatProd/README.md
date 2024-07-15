@@ -38,7 +38,7 @@ $$
 
 where $m_i$ is the binary digits of the plaintext $m$.
 
-We know that every $A_i$ (without bar) have small entries, so their trace are small too. The trace of their produce are small too.
+We know that every $A_i$ (without bar) have small entries, so their trace are small too. The trace of their product are small too.
 
 Also, using the cyclic property of trace, we see that:
 
@@ -62,9 +62,9 @@ $$
 
 which is small.
 
-Note that it also holds if we multiple the correct inverse of $\bar{A}_i^b$ to $M$, and any incorrect inverse of $\bar{A}_i^b$ to $M$ will suddenly increase the trace a lot.
+Note that it also holds if we multiply the correct inverse of $\bar{A}_i^b$ to $M$, and any incorrect inverse of $\bar{A}_i^b$ to $M$ will suddenly increase the trace a lot.
 
-So my idea is to brute force some bits for the start and end of the $m_i$ (e.g. $a$ bits from front and $b$ bits from end), and multiple all the inverse to $M$ and resulting in bunch of $M'_j$.
+So my idea is to brute force some bits for the start and end of the $m_i$ (e.g. $a$ bits from front and $b$ bits from end), and multiply all the inverse to $M$ and resulting in bunch of $M'_j$.
 
 Then we generate some random partial ciphertext $M_r$ that have same rank with $M'_j$ (i.e. start and ends with same index like $a$ to $k-b$). For each $M_r$, flatten it and put it into a column of a lattice $L$, then reduce it modulo $p$. Take the shortest non-zero vector $v$ from the reduced basis and solve for $t$ that satisfy $tL=v$, and $t$ is a vector that can be seen as (quasi-)equivalent to $\mathop{\text{flatten}}((E_{k-b} E_a^{-1})^T)$.
 
