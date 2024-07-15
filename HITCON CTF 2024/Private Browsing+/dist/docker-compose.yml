@@ -1,0 +1,24 @@
+services:
+  web:
+    build:
+      context: ./web
+    environment:
+      - PORT=3000
+    init: true
+    ports:
+      - "3000:3000"
+  bot:
+    build:
+      context: ./bot
+    environment:
+      - TITLE=Admin Bot for Private Browsing+
+      - PORT=8000
+      - URL_CHECK_REGEX=^https?://.{1,256}$
+      - TURNSTILE_SITE_KEY=1x00000000000000000000AA  # Will be changed in deployment
+      - TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA  # Will be changed in deployment
+      - SITE=http://web:3000/
+      - FLAG=flag{fake_flag}  # Will be changed in deployment
+    security_opt: 
+      - seccomp=chrome.json
+    ports:
+      - "8000:8000"

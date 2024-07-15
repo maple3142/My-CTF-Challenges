@@ -1,0 +1,26 @@
+services:
+  rclone:
+    image: rclone
+    build: .
+    environment:
+      - SECRET=secret  # randomized secret per instancer
+    networks:
+      - chall
+  bot:
+    image: rclone-bot
+    build: ./bot
+    environment:
+      - TITLE=Admin Bot for RClonE
+      - PORT=8000
+      - URL_CHECK_REGEX=^https?://.{1,256}$
+      - SECRET=secret  # randomized secret per instancer
+    security_opt: 
+      - seccomp=chrome.json
+    ports:
+      - "${PORT}:8000"
+    networks:
+      - default
+      - chall
+networks:
+  chall:
+    internal: true

@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    image: truth_of_npm
+    ports:
+      - '${PORT}:8000'

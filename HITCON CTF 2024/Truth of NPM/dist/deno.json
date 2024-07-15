@@ -1,0 +1,14 @@
+{
+	"imports": {
+		"hono": "jsr:@hono/hono@^4.4.13",
+		"path": "jsr:@std/path@^0.224.0",
+		"fs": "jsr:@std/fs/walk"
+	},
+	"tasks": {
+		"start": "deno serve --no-lock --allow-read --allow-write --allow-env main.ts"
+	},
+	"compilerOptions": {
+		"jsx": "precompile",
+		"jsxImportSource": "hono/jsx"
+	}
+}

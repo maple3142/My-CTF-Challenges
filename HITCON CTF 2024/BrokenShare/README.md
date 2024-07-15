@@ -1,7 +1,7 @@
 # BrokenShare
 
 * Category: Crypto
-* Score: 256/500
+* Score: 265/500
 * Solves: 26
 
 ## Description
