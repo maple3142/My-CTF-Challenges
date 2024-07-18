@@ -74,3 +74,19 @@ Here we assume that $p$ is known. We can see that reducing $\mathop{\text{Slice}
 While this explaination sounds reasonable (to me), I find that replacing the $p$ used in the last step with any reasonably large prime $p' \neq q$ also works, and this is why I think my explanation above is wrong.
 
 > @genni first blooded this challenge, and he said his solution is based on Stern's algorithm, which only require one LLL to solve the challenge. I have no idea how it works, but I think it is worth mentioning and I might try to understand it later.
+
+## Solution by @lance_roy from Kalmarunionen
+
+His idea is to recover a and p using a variant of Stern's attack, then it becomes a similar problem to my old challenge [Easy DSA:LCG](../../ImaginaryCTF/Round%2030/Easy%20DSA:%20LCG) (or ["Pseudo-Random" Number Generation within Cryptographic Algorithms: the DSS Case](https://cseweb.ucsd.edu/~mihir/papers/dss-lcg.pdf)).
+
+> Lance Roy: Stern's attack is usually done when you are given the high bits of the LCG output, but it works equally well with the low bits of the LCG output, or more generally reducing the LCG output modulo a second, smaller modulus.
+
+> Lance Roy: Because I didn't get the LCG output exactly, only that the output is $k = s^{-1} * z + s^{-1} * r * d \pmod{q}$, I made it search for short vectors orthogonal $\pmod{q}$ to both $s^{-1} * z$ and $s^{-1} * r * d$, so that I'd be sure that it was orthogonal to k. When these vectors are short enough, a bound similar to the one for Stern's attack shows that the vector has to be orthogonal to the original PRG output. Interpreting the orthogonal vector as a polynomial, this means that the polynomial is a multiple of $(x - a)$ modulo $p$, so I can take a gcd of resultants of a few of these orthogonal vectors to get $p$, and then take the gcd of the polynomials $\pmod{p}$ to get $x - a$.
+
+> Solver: [solve_lance_roy.sage](./solution/solve_lance_roy.sage)
+
+Actually, the idea of adapting Stern's attack is one of the few things I tried when I tried to develop this challenge, but it doesn't work for me at that time. However, after I read and understand his solution, I understand that culpit is that the **short vectors** $\lambda$ would have to be orthogonal to $k$ **over integers**, not modulo $q$. The vectors in the `ortho` matrix in my solver are only orthogonal in $\mathbb{Z}_q$ but not in $\mathbb{Z}$, so trying to apply Stern's attack on them would not work.
+
+It turns out a simple `find_ortho_fp(q, v1, v2)` it not sufficient, but `find_ortho_fp(q, v1[:-1], v2[:-1], v1[1:], v2[1:])` could result in vectors that zeros $k$ over integers. And I combined this idea and my solver, it only require one lattice reduction to solve the challenge. See [solve3.py](./solution/solve3.py) for the implementation.
+
+> The solution from [genni](https://discord.com/channels/915238696494723102/1046425374814380042/1262049826854535188) and [ConnorM](https://connor-mccartney.github.io/cryptography/ecc/ECLCG-HITCON-2024) are also fairly similar at the start, so I think we can conclude that the most crucial step is to find orthogonal vectors.
