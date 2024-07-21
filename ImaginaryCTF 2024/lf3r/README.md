@@ -17,3 +17,7 @@ Similarly, there is also another matrix $M_3$ over $\mathbb{F}_3$ that $\text{lf
 Since the correct $\text{lfsr\_lsb\_stream}$ have to be binary, and the $\text{sol}$ contains ternary digits, I apply a randomized greedy algorithm to remove the presence of $2$ and it would recover the correct $\text{lfsr\_lsb\_stream}$.
 
 Finally, solve a system over $\mathbb{F}_2$ with $M_2$ recover the key and we can decrypt the flag. See [solve.py](./solve.py) for details.
+
+## Alternative Solution by @remy_o
+
+Given two successive in the output $u_0, u_1$, we can see that $u_0=2n+\text{lsb}, u_1=\text{msb}+n$, so $u_0+u_1 \equiv \text{lsb}+\text{msb} \pmod{3}$, which gives many relations. This gives more than 70% bits for free, so this requires much less than 2048 bits to work.
