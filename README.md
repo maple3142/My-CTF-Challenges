@@ -74,6 +74,19 @@ This is some challenges I created for CTF competitions.
 | [Typechecker](<ImaginaryCTF 2023/Typechecker>)             | Reverse  | TypeScript, Math | ★★         |
 | [Get and set](<ImaginaryCTF 2023/Get and set>)             | Misc     | Pyjail           | ★★         |
 
+## ImaginaryCTF 2024
+
+| Name                                   | Category | Tags               | Difficulty |
+| -------------------------------------- | -------- | ------------------ | ---------- |
+| [lf3r](<ImaginaryCTF 2024/lf3r>)       | Crypto   | LFSR               | ★★☆        |
+| [coast](<ImaginaryCTF 2024/coast>)     | Crypto   | Isogeny            | ★★☆        |
+| [notitle](<ImaginaryCTF 2024/notitle>) | Crypto   | DLP, LLL           | ★★★        |
+| [pacap](<ImaginaryCTF 2024/pacap>)     | Crypto   | Coppersmith        | ★★★        |
+| [vokram](<ImaginaryCTF 2024/vokram>)   | Reverse  | Markov Algorithm   | ★★★        |
+| [readme](<ImaginaryCTF 2024/readme>)   | Web      | Path Normalization | ★          |
+| [readme2](<ImaginaryCTF 2024/readme2>) | Web      | Bun, HTTP          | ★★         |
+| [calc](<ImaginaryCTF 2024/calc>)       | Misc     | Pyjail             | ★★★        |
+
 ## ImaginaryCTF
 
 | Name                                                              | Category | Tags                                       | Difficulty |

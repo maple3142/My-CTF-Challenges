@@ -1,0 +1,8 @@
+services:
+  web:
+    image: readme
+    build: .
+    ports:
+      - "8000:80"
+    environment:
+      - FLAG=flag{test_flag}
