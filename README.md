@@ -212,6 +212,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Flag Server](<ImaginaryCTF/Round 44/Flag Server>) | Web      | HTTP Cookie | ★★☆        |
 | [FLT-1337](<ImaginaryCTF/Round 44/FLT-1337>)       | Misc     | Sage Trivia | ☆          |
 
+### Round 48
+
+| Name                                       | Category | Tags      | Difficulty |
+| ------------------------------------------ | -------- | --------- | ---------- |
+| [readme3](<ImaginaryCTF/Round 48/readme3>) | Web      | HTTP, Bun | ★★         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |

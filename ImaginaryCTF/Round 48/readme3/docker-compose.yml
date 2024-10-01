@@ -1,0 +1,9 @@
+services:
+    web:
+        image: readme3
+        build: .
+        ports:
+            - '4000:4000'
+        environment:
+            - FLAG=ictf{I_hope_there_is_no_more_unintended_solutions_this_time_:(}
+        init: true
