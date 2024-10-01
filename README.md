@@ -218,6 +218,13 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | ------------------------------------------ | -------- | --------- | ---------- |
 | [readme3](<ImaginaryCTF/Round 48/readme3>) | Web      | HTTP, Bun | ★★         |
 
+### Round 49
+
+| Name                                       | Category | Tags        | Difficulty |
+| ------------------------------------------ | -------- | ----------- | ---------- |
+| [MDLP](<ImaginaryCTF/Round 49/MDLP>)       | Crypto   | DLP, LLL    | ★★         |
+| [MDLP v2](<ImaginaryCTF/Round 49/MDLP v2>) | Crypto   | Coppersmith | ★★☆        |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |
