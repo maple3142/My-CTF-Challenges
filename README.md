@@ -87,6 +87,12 @@ This is some challenges I created for CTF competitions.
 | [readme2](<ImaginaryCTF 2024/readme2>) | Web      | Bun, HTTP          | ★★         |
 | [calc](<ImaginaryCTF 2024/calc>)       | Misc     | Pyjail             | ★★★        |
 
+## ASIS CTF Finals 2024
+
+| Name                                    | Category | Tags | Difficulty |
+| --------------------------------------- | -------- | ---- | ---------- |
+| [LiveMD](<ASIS CTF Finals 2024/LiveMD>) | Web      | XSS  | ★★★☆       |
+
 ## ImaginaryCTF
 
 | Name                                                              | Category | Tags                                       | Difficulty |

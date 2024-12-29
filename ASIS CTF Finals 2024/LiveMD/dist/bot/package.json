@@ -1,0 +1,11 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "puppeteer": "^23.11.1",
+    "xfetch-js": "^0.6.0"
+  }
+}
