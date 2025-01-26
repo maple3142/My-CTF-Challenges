@@ -57,6 +57,6 @@ First we can find arbitrary $a$ that $a^{2^{127}}=c$ and arbitrary $b$ that $b^{
 
 Since $b$ is an element with order $2^{127}=p+1$, and $p+1$ divides $p^2-1$ so we can expect $b$ would be like an element of $\mathbb{F}_{p^2}$ in some sense. That is, $b^i$ would be in the form of $a'r+b'$ for some $r$ such that $r^2+1=0$ ($a', b'$ are arbitrary).
 
-So $\text{key}=a*b^i=(a*r)*a'+(a)*b'$ which is small, and the can be found by LLL. This is how @soon_haari solved this challenge.
+So $\text{key}=a \cdot b^i=(a \cdot r) \cdot a'+(a) \cdot b'$ which is small, and the can be found by LLL. This is how @soon_haari solved this challenge.
 
-For me, based on $b^i=a'*r+b'$ I observed that $b^i$ would be in a linear subspace with low rank (2) of $\mathbb{F}_p^k$. Similarly, the space of $\text{key}=a*b^i$ is also small. So we can construct a basis matrix to the subspace and use LLL to find a short vector to it, which is the key!
+For me, based on $b^i=a' \cdot r+b'$ I observed that $b^i$ would be in a linear subspace with low rank (2) of $\mathbb{F}_p^k$. Similarly, the space of $\text{key}=a \cdot b^i$ is also small. So we can construct a basis matrix to the subspace and use LLL to find a short vector to it, which is the key!
