@@ -93,6 +93,12 @@ This is some challenges I created for CTF competitions.
 | --------------------------------------- | -------- | ---- | ---------- |
 | [LiveMD](<ASIS CTF Finals 2024/LiveMD>) | Web      | XSS  | ★★★☆       |
 
+## AlpacaHack Round 9
+
+| Name                                | Category | Tags | Difficulty |
+| ----------------------------------- | -------- | ---- | ---------- |
+| [ffmac](<AlpacaHack Round 9/ffmac>) | Crypto   | GF   | ★★★        |
+
 ## ImaginaryCTF
 
 | Name                                                              | Category | Tags                                       | Difficulty |
