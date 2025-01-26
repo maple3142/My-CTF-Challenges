@@ -44,3 +44,19 @@ The implementation of the strategy above is in [solve.py](solve.py).
 One of the possible solutions is to apply LLL to to the quadratic system directly without groebner basis (linearization), but actually doing so would not work. The reason is that there are way too many solutions to $x^{2^{127}}=c$ as it is just squaring $x$ by $127$ times, and each squaring would have two possible roots. Having many solutions can make your desired shortest vector not being the shortest vector in the lattice so LLL would not work, and this is more problematic in the lattice based on linearization due to having more dimensions.
 
 Changing the returned value of `ffmac` to something like `return k4 * l + k5 * r * x + x + k6` would make the make the ideal having dimension 0 so `I.variety()` would return the solution directly, and LLL on linearization lattice would work too.
+
+## Alternative Solution
+
+This alternative solution is based on how @soon_haari solved this challenge with some simplification from me. See [solve2.py](solve2.py) for the implementation.
+
+The idea is pretty simple. First observe that the MAC function is $c_1 x^{2^{127}} + c_2$ where $c_1, c_2$ are some secret constants derived from the key. So we can use just 2 input/output pair and solve for $c_1, c_2$ directly over $\mathbb{F}_{p^k}$. So forging the MAC tag is also trivial.
+
+To find the AES key, it is essentially same as finding a small root to $x^{2^{127}}=c$ where $c_1 c + c_2 = \text{mackey}$.
+
+First we can find arbitrary $a$ that $a^{2^{127}}=c$ and arbitrary $b$ that $b^{2^{127}}=1$, so every possible solutions to the equation would be in the form of $a \cdot b^i$ including the key.
+
+Since $b$ is an element with order $2^{127}=p+1$, and $p+1$ divides $p^2-1$ so we can expect $b$ would be like an element of $\mathbb{F}_{p^2}$ in some sense. That is, $b^i$ would be in the form of $a'r+b'$ for some $r$ such that $r^2+1=0$ ($a', b'$ are arbitrary).
+
+So $\text{key}=a*b^i=(a*r)*a'+(a)*b'$ which is small, and the can be found by LLL. This is how @soon_haari solved this challenge.
+
+For me, based on $b^i=a'*r+b'$ I observed that $b^i$ would be in a linear subspace with low rank (2) of $\mathbb{F}_p^k$. Similarly, the space of $\text{key}=a*b^i$ is also small. So we can construct a basis matrix to the subspace and use LLL to find a short vector to it, which is the key!
