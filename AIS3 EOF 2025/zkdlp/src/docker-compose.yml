@@ -1,0 +1,7 @@
+services:
+  zkdlp:
+    build: .
+    ports:
+      - "11337:1337"
+    environment:
+      - FLAG=AIS3{if_you_know_the_flag......?_you_know_the_flag!_btw,你願意和我玩一輩子ZKP嗎🥺}

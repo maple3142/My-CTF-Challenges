@@ -1,0 +1,7 @@
+services:
+  prsa:
+    build: .
+    ports:
+      - "21337:1337"
+    environment:
+      - FLAG=AIS3{this_is_what_could_happen_to_rsa_if_it_is_an_additively_homomorphic_encryption}

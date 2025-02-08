@@ -283,6 +283,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Baby XOR](<AIS3 EOF 2024/Baby XOR>)                                 | Crypto   | Linear Algebra, LLL   | ★★★        |
 | [Internal](<AIS3 EOF 2024/Internal>)                                 | Web      | Nginx, CRLF Injection | ★          |
 
+## AIS3 EOF 2025
+
+| Name                           | Category | Tags          | Difficulty |
+| ------------------------------ | -------- | ------------- | ---------- |
+| [prsa](<AIS3 EOF 2025/prsa>)   | Crypto   | RSA, Paillier | ★★         |
+| [zkdlp](<AIS3 EOF 2025/zkdlp>) | Crypto   | ZKP, MT19937  | ★★☆        |
 
 ## Security BSides Ahmedabad CTF 2022
 
