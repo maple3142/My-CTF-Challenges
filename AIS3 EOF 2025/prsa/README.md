@@ -1,7 +1,7 @@
 # prsa
 
 * Category: Crypto
-* Score: 3/11
+* Solves: 3/11
 
 ## Description
 
