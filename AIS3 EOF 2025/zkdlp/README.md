@@ -24,7 +24,7 @@ Just solve the DLP and prove it to me with ZKP
 我這邊的做法是先假設前 $k=10$ 次 `random.randrange(q)` 的過程都沒有任何 rejection，那就能直接利用前 $k$ 次輸出來嘗試解出 MT19937 的 initial state。成功機率是:
 
 $$
-P=(\frac{q}{\lceil \log_2{q} \rceil})^k \approx 0.7^k \approx 2.8\%
+P=(\frac{q}{\lceil \log_2{q} \rceil})^k \approx 0.7^k \approx 0.028
 $$
 
 因此 $k=10$ 相當可行，大概 50 次內就能成功一次了。
