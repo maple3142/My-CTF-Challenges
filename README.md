@@ -237,6 +237,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [MDLP](<ImaginaryCTF/Round 49/MDLP>)       | Crypto   | DLP, LLL    | ★★         |
 | [MDLP v2](<ImaginaryCTF/Round 49/MDLP v2>) | Crypto   | Coppersmith | ★★☆        |
 
+### Round 54
+
+| Name                                   | Category | Tags                | Difficulty |
+| -------------------------------------- | -------- | ------------------- | ---------- |
+| [MLFSR](<ImaginaryCTF/Round 54/MLFSR>) | Crypto   | Stern's Attack, LLL | ★★★        |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |

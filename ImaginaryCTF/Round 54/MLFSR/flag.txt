@@ -1,0 +1,1 @@
+ictf{lfsr_is_approximately_equal_to_lcg_right?}
