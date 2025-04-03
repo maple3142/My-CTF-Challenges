@@ -74,6 +74,8 @@ The reason that $t$ can only be seen as a (quasi-)equivalent to the flattened bi
 
 See [solve_alternting.py](./solution/solve_alternting.py) for the solver for alternating construction.
 
+> If you find my explanation to hard to understand, read [this writeup](https://blog.tanglee.top/2024/07/15/HITCON-CTF-2024-Qual-Crypto-Writeup.html#matprod) by others instead. It did a really good job at explaning my attack then this, especially on the alternating one XD.
+
 ### Get Flag
 
 Just run both solver to get the plaintext for both challenge, and execute:
