@@ -24,27 +24,27 @@ This is some challenges I created for CTF competitions.
 
 ## HITCON CTF 2022
 
-| Name                                           | Category    | Tags                                           | Difficulty |
-| ---------------------------------------------- | ----------- | ---------------------------------------------- | ---------- |
-| [BabySSS](<HITCON CTF 2022/BabySSS>)           | Crypto      | SSS, CRT                                       | ★☆         |
-| [Superprime](<HITCON CTF 2022/Superprime>)     | Crypto      | Binary Search, Prune and Search                | ★★☆        |
-| [Chimera](<HITCON CTF 2022/Chimera>)           | Crypto      | ECM, LLL/Coppersmith, ECDLP, Hidden Subset Sum | ★★★★       |
-| [LemMinX](<HITCON CTF 2022/LemMinX>)           | Misc        | LSP, XXE                                       | ★★★        |
-| [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, Cipher Suite Confusion, DOMPurify, CSP  | ★★★★       |
+| Name                                           | Category    | Tags                                 | Difficulty |
+| ---------------------------------------------- | ----------- | ------------------------------------ | ---------- |
+| [BabySSS](<HITCON CTF 2022/BabySSS>)           | Crypto      | SSS, CRT                             | ★☆         |
+| [Superprime](<HITCON CTF 2022/Superprime>)     | Crypto      | Binary Search, Prune and Search      | ★★☆        |
+| [Chimera](<HITCON CTF 2022/Chimera>)           | Crypto      | ECM, LLL, ECDLP, HSSP                | ★★★★       |
+| [LemMinX](<HITCON CTF 2022/LemMinX>)           | Misc        | LSP, XXE                             | ★★★        |
+| [Secure Paste](<HITCON CTF 2022/Secure Paste>) | Web, Crypto | JSONP, Key Confusion, DOMPurify, CSP | ★★★★       |
 
 ## HITCON CTF 2023
 
-| Name                                                                       | Category | Tags                               | Difficulty |
-| -------------------------------------------------------------------------- | -------- | ---------------------------------- | ---------- |
-| [Share](<HITCON CTF 2023/Share>)                                           | Crypto   | SSS, CRT                           | ★★         |
-| [EZRSA](<HITCON CTF 2023/EZRSA>)                                           | Crypto   | ECC, Wiener, ECM                   | ★★☆        |
-| [Echo](<HITCON CTF 2023/Echo>)                                             | Crypto   | RSA, Index Calculus, LLL           | ★★★        |
-| [Random Shuffling Algorithm](<HITCON CTF 2023/Random Shuffling Algorithm>) | Crypto   | Noisy CRT, Coppersmith             | ★★★☆       |
-| [Collision](<HITCON CTF 2023/Collision>)                                   | Crypto   | Code Review, Python Hash Collision | ★★★☆       |
-| [Lisp.js](<HITCON CTF 2023/Lisp.js>)                                       | Misc     | Node.js Jail                       | ★★★        |
-| [Login System](<HITCON CTF 2023/Login System>)                             | Web      | TE.TE, JSON Injection, YAML        | ★★★        |
-| [Canvas](<HITCON CTF 2023/Canvas>)                                         | Web      | JS Jail, Worker, CSP               | ★★★☆       |
-| [Harmony](<HITCON CTF 2023/Harmony>)                                       | Web      | Electron                           | ★★★★☆      |
+| Name                                                                       | Category | Tags                        | Difficulty |
+| -------------------------------------------------------------------------- | -------- | --------------------------- | ---------- |
+| [Share](<HITCON CTF 2023/Share>)                                           | Crypto   | SSS, CRT                    | ★★         |
+| [EZRSA](<HITCON CTF 2023/EZRSA>)                                           | Crypto   | ECC, Wiener, ECM            | ★★☆        |
+| [Echo](<HITCON CTF 2023/Echo>)                                             | Crypto   | RSA, Index Calculus, LLL    | ★★★        |
+| [Random Shuffling Algorithm](<HITCON CTF 2023/Random Shuffling Algorithm>) | Crypto   | Noisy CRT, Coppersmith      | ★★★☆       |
+| [Collision](<HITCON CTF 2023/Collision>)                                   | Crypto   | Collision                   | ★★★☆       |
+| [Lisp.js](<HITCON CTF 2023/Lisp.js>)                                       | Misc     | Node.js Jail                | ★★★        |
+| [Login System](<HITCON CTF 2023/Login System>)                             | Web      | TE.TE, JSON Injection, YAML | ★★★        |
+| [Canvas](<HITCON CTF 2023/Canvas>)                                         | Web      | JS Jail, Worker, CSP        | ★★★☆       |
+| [Harmony](<HITCON CTF 2023/Harmony>)                                       | Web      | Electron                    | ★★★★☆      |
 
 ## HITCON CTF 2024
 
@@ -54,7 +54,7 @@ This is some challenges I created for CTF competitions.
 | [BrokenShare](<HITCON CTF 2024/BrokenShare>)             | Crypto   | SSS, LLL                | ★★★        |
 | [Hyper512](<HITCON CTF 2024/Hyper512>)                   | Crypto   | LFSR, FCA               | ★★★☆       |
 | [ECLCG](<HITCON CTF 2024/ECLCG>)                         | Crypto   | ECDSA, LCG, LLL         | ★★★★       |
-| [MatProd](<HITCON CTF 2024/MatProd>)                     | Crypto   | Linear Algebra, LLL     | ★★★★       |
+| [MatProd](<HITCON CTF 2024/MatProd>)                     | Crypto   | Matrix, LLL             | ★★★★       |
 | [Flag Reader](<HITCON CTF 2024/Flag Reader>)             | Misc     | Tar                     | ★☆         |
 | [RClonE](<HITCON CTF 2024/RClonE>)                       | Web      | CSRF, RCE               | ★★         |
 | [Truth of NPM](<HITCON CTF 2024/Truth of NPM>)           | Web      | Deno, LFI, RCE          | ★★★        |
@@ -62,17 +62,17 @@ This is some challenges I created for CTF competitions.
 
 ## ImaginaryCTF 2023
 
-| Name                                                       | Category | Tags             | Difficulty |
-| ---------------------------------------------------------- | -------- | ---------------- | ---------- |
-| [Tan](<ImaginaryCTF 2023/Tan>)                             | Crypto   | LLL              | ★★         |
-| [Wasteful](<ImaginaryCTF 2023/Wasteful>)                   | Crypto   | RSA, Coppersmith | ★★         |
-| [Sus](<ImaginaryCTF 2023/Sus>)                             | Crypto   | RSA, Math        | ★★☆        |
-| [Imaginary Casino](<ImaginaryCTF 2023/Imaginary Casino>)   | Crypto   | CSIDH, RNG       | ★★☆        |
-| [Login](<ImaginaryCTF 2023/Login>)                         | Web      | PHP              | ★☆         |
-| [Sanitized](<ImaginaryCTF 2023/Sanitized>)                 | Web      | DOMPurify, XHTML | ★★★        |
-| [Sanitized Revenge](<ImaginaryCTF 2023/Sanitized Revenge>) | Web      | DOMPurify, XHTML | ★★★        |
-| [Typechecker](<ImaginaryCTF 2023/Typechecker>)             | Reverse  | TypeScript, Math | ★★         |
-| [Get and set](<ImaginaryCTF 2023/Get and set>)             | Misc     | Pyjail           | ★★         |
+| Name                                                       | Category | Tags               | Difficulty |
+| ---------------------------------------------------------- | -------- | ------------------ | ---------- |
+| [Tan](<ImaginaryCTF 2023/Tan>)                             | Crypto   | LLL                | ★★         |
+| [Wasteful](<ImaginaryCTF 2023/Wasteful>)                   | Crypto   | RSA, Coppersmith   | ★★         |
+| [Sus](<ImaginaryCTF 2023/Sus>)                             | Crypto   | RSA, Algebra       | ★★☆        |
+| [Imaginary Casino](<ImaginaryCTF 2023/Imaginary Casino>)   | Crypto   | CSIDH, RNG         | ★★☆        |
+| [Login](<ImaginaryCTF 2023/Login>)                         | Web      | PHP                | ★☆         |
+| [Sanitized](<ImaginaryCTF 2023/Sanitized>)                 | Web      | DOMPurify, XHTML   | ★★★        |
+| [Sanitized Revenge](<ImaginaryCTF 2023/Sanitized Revenge>) | Web      | DOMPurify, XHTML   | ★★★        |
+| [Typechecker](<ImaginaryCTF 2023/Typechecker>)             | Reverse  | TypeScript, Linear | ★★         |
+| [Get and set](<ImaginaryCTF 2023/Get and set>)             | Misc     | Pyjail             | ★★         |
 
 ## ImaginaryCTF 2024
 
@@ -80,7 +80,7 @@ This is some challenges I created for CTF competitions.
 | -------------------------------------- | -------- | ------------------ | ---------- |
 | [lf3r](<ImaginaryCTF 2024/lf3r>)       | Crypto   | LFSR               | ★★☆        |
 | [coast](<ImaginaryCTF 2024/coast>)     | Crypto   | Isogeny            | ★★☆        |
-| [notitle](<ImaginaryCTF 2024/notitle>) | Crypto   | DLP, LLL           | ★★★        |
+| [notitle](<ImaginaryCTF 2024/notitle>) | Crypto   | Algebra, DLP, LLL  | ★★★        |
 | [pacap](<ImaginaryCTF 2024/pacap>)     | Crypto   | Coppersmith        | ★★★        |
 | [vokram](<ImaginaryCTF 2024/vokram>)   | Reverse  | Markov Algorithm   | ★★★        |
 | [readme](<ImaginaryCTF 2024/readme>)   | Web      | Path Normalization | ★          |
@@ -95,9 +95,9 @@ This is some challenges I created for CTF competitions.
 
 ## AlpacaHack Round 9
 
-| Name                                | Category | Tags | Difficulty |
-| ----------------------------------- | -------- | ---- | ---------- |
-| [ffmac](<AlpacaHack Round 9/ffmac>) | Crypto   | GF   | ★★★        |
+| Name                                | Category | Tags       | Difficulty |
+| ----------------------------------- | -------- | ---------- | ---------- |
+| [ffmac](<AlpacaHack Round 9/ffmac>) | Crypto   | Linear, GB | ★★★        |
 
 ## ImaginaryCTF
 
@@ -206,15 +206,15 @@ These two challenges are created before I became a board of ImaginaryCTF.
 
 ### Round 40
 
-| Name                                                   | Category | Tags | Difficulty |
-| ------------------------------------------------------ | -------- | ---- | ---------- |
-| [Leet Universe](<ImaginaryCTF/Round 40/Leet Universe>) | Crypto   | Math | ★★         |
+| Name                                                   | Category | Tags          | Difficulty |
+| ------------------------------------------------------ | -------- | ------------- | ---------- |
+| [Leet Universe](<ImaginaryCTF/Round 40/Leet Universe>) | Crypto   | Number Theory | ★★         |
 
 ### Round 43
 
-| Name                                                 | Category | Tags | Difficulty |
-| ---------------------------------------------------- | -------- | ---- | ---------- |
-| [Three Pieces](<ImaginaryCTF/Round 43/Three Pieces>) | Crypto   | Math | ★☆         |
+| Name                                                 | Category | Tags          | Difficulty |
+| ---------------------------------------------------- | -------- | ------------- | ---------- |
+| [Three Pieces](<ImaginaryCTF/Round 43/Three Pieces>) | Crypto   | Number Theory | ★☆         |
 
 
 ### Round 44
@@ -251,20 +251,20 @@ These two challenges are created before I became a board of ImaginaryCTF.
 
 ## AIS3 Pre-exam 2022
 
-| Name                                                                | Category | Tags                                        | Difficulty |
-| ------------------------------------------------------------------- | -------- | ------------------------------------------- | ---------- |
-| [JeetQode](<AIS3 Pre-exam 2022/JeetQode>)                           | Misc     | PPC, JQ                                     | ★☆         |
-| [B64DLE](<AIS3 Pre-exam 2022/B64DLE>)                               | Misc     | AES-CTR, Pickle, Python Format String       | ★★☆        |
-| [SC](<AIS3 Pre-exam 2022/SC>)                                       | Crypto   | Classic                                     | ☆          |
-| [Fast Cipher](<AIS3 Pre-exam 2022/Fast Cipher>)                     | Crypto   | Modular Arithmetic                          | ☆          |
-| [shamiko](<AIS3 Pre-exam 2022/shamiko>)                             | Crypto   | SHA1 Collision, DSA                         | ★☆         |
-| [Really Strange orAcle](<AIS3 Pre-exam 2022/Really Strange orAcle>) | Crypto   | GCD, Binomial Theorem                       | ★☆         |
-| [pettan](<AIS3 Pre-exam 2022/pettan>)                               | Crypto   | RSA Small Message, MT19937, Related Message | ★★☆        |
-| [pekobot](<AIS3 Pre-exam 2022/pekobot>)                             | Crypto   | Invalid Curve Attack                        | ★★★        |
-| [Flag Checker](<AIS3 Pre-exam 2022/Flag Checker>)                   | Reverse  | ROP, Pickle, Single Prime RSA               | ★★         |
-| [Private Browsing](<AIS3 Pre-exam 2022/Private Browsing>)           | Web      | SSRF, Redis, PHP Deserialization            | ★★         |
-| [UTF-8 Editor](<AIS3 Pre-exam 2022/UTF-8 Editor>)                   | Pwn      | C++, std::vector, OOB, GOT overwrite        | ★★         |
-| [SAAS](<AIS3 Pre-exam 2022/SAAS>)                                   | Pwn      | C++, Copy Constructor, UAF                  | ★★☆        |
+| Name                                                                | Category | Tags                                  | Difficulty |
+| ------------------------------------------------------------------- | -------- | ------------------------------------- | ---------- |
+| [JeetQode](<AIS3 Pre-exam 2022/JeetQode>)                           | Misc     | PPC, JQ                               | ★☆         |
+| [B64DLE](<AIS3 Pre-exam 2022/B64DLE>)                               | Misc     | AES-CTR, Pickle, Python Format String | ★★☆        |
+| [SC](<AIS3 Pre-exam 2022/SC>)                                       | Crypto   | Classic                               | ☆          |
+| [Fast Cipher](<AIS3 Pre-exam 2022/Fast Cipher>)                     | Crypto   | Modular Arithmetic                    | ☆          |
+| [shamiko](<AIS3 Pre-exam 2022/shamiko>)                             | Crypto   | SHA1, DSA                             | ★☆         |
+| [Really Strange orAcle](<AIS3 Pre-exam 2022/Really Strange orAcle>) | Crypto   | GCD, Binomial Theorem                 | ★☆         |
+| [pettan](<AIS3 Pre-exam 2022/pettan>)                               | Crypto   | RSA, MT19937                          | ★★☆        |
+| [pekobot](<AIS3 Pre-exam 2022/pekobot>)                             | Crypto   | Invalid Curve Attack                  | ★★★        |
+| [Flag Checker](<AIS3 Pre-exam 2022/Flag Checker>)                   | Reverse  | ROP, Pickle, RSA-like                 | ★★         |
+| [Private Browsing](<AIS3 Pre-exam 2022/Private Browsing>)           | Web      | SSRF, Redis, PHP, Deserialization     | ★★         |
+| [UTF-8 Editor](<AIS3 Pre-exam 2022/UTF-8 Editor>)                   | Pwn      | C++, std::vector, OOB, GOT overwrite  | ★★         |
+| [SAAS](<AIS3 Pre-exam 2022/SAAS>)                                   | Pwn      | C++, Copy Constructor, UAF            | ★★☆        |
 
 ## AIS3 Pre-exam 2023
 
@@ -274,25 +274,25 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [Not Wiener](<AIS3 Pre-exam 2023/Not Wiener>)                 | Crypto   | RSA, Coppersmith    | ★★         |
 | [Media Server](<AIS3 Pre-exam 2023/Media Server>)             | Misc     | Python http, procfs | ★★         |
 | [Gitly](<AIS3 Pre-exam 2023/Gitly>)                           | Web      | 0day                | ★          |
-| [Password Generator](<AIS3 Pre-exam 2023/Password Generator>) | Pwn      | Math, ROP           | ★☆         |
+| [Password Generator](<AIS3 Pre-exam 2023/Password Generator>) | Pwn      | Number Theory, ROP  | ★☆         |
 
 ## AIS3 EOF 2023 - koh-jeopardy
 
-| Name                                                                    | Category | Tags                  | Difficulty |
-| ----------------------------------------------------------------------- | -------- | --------------------- | ---------- |
-| [Shamiko no fukushuu](<AIS3 EOF 2023/koh-jeopardy/shamiko_no_fukushuu>) | Crypto   | ECDSA, Hmac collision | ★          |
-| [onelinecrypto](<AIS3 EOF 2023/koh-jeopardy/onelinecrypto>)             | Crypto   | RSA, LSB              | ★          |
-| [NotLFSR](<AIS3 EOF 2023/koh-jeopardy/NotLFSR>)                         | Crypto   | LFSR                  | ★☆         |
-| [magicRSA](<AIS3 EOF 2023/koh-jeopardy/magicRSA>)                       | Crypto   | RSA                   | ★☆         |
-| [Neo RSA](<AIS3 EOF 2023/koh-jeopardy/neo_rsa>)                         | Crypto   | RSA, coppersmith      | ★★         |
+| Name                                                                    | Category | Tags             | Difficulty |
+| ----------------------------------------------------------------------- | -------- | ---------------- | ---------- |
+| [Shamiko no fukushuu](<AIS3 EOF 2023/koh-jeopardy/shamiko_no_fukushuu>) | Crypto   | ECDSA, HMAC      | ★          |
+| [onelinecrypto](<AIS3 EOF 2023/koh-jeopardy/onelinecrypto>)             | Crypto   | RSA, LSB         | ★          |
+| [NotLFSR](<AIS3 EOF 2023/koh-jeopardy/NotLFSR>)                         | Crypto   | LFSR             | ★☆         |
+| [magicRSA](<AIS3 EOF 2023/koh-jeopardy/magicRSA>)                       | Crypto   | RSA              | ★☆         |
+| [Neo RSA](<AIS3 EOF 2023/koh-jeopardy/neo_rsa>)                         | Crypto   | RSA, coppersmith | ★★         |
 
 ## AIS3 EOF 2024
 
 | Name                                                                 | Category | Tags                  | Difficulty |
 | -------------------------------------------------------------------- | -------- | --------------------- | ---------- |
 | [Baby Side Channel Attack](<AIS3 EOF 2024/Baby Side Channel Attack>) | Crypto   | SCA, RSA              | ★          |
-| [Baby ECDLP](<AIS3 EOF 2024/Baby ECDLP>)                             | Crypto   | Math, ECDLP           | ★☆         |
-| [Baby XOR](<AIS3 EOF 2024/Baby XOR>)                                 | Crypto   | Linear Algebra, LLL   | ★★★        |
+| [Baby ECDLP](<AIS3 EOF 2024/Baby ECDLP>)                             | Crypto   | Linear, ECDLP         | ★☆         |
+| [Baby XOR](<AIS3 EOF 2024/Baby XOR>)                                 | Crypto   | Linear, LLL           | ★★★        |
 | [Internal](<AIS3 EOF 2024/Internal>)                                 | Web      | Nginx, CRLF Injection | ★          |
 
 ## AIS3 EOF 2025
