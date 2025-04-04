@@ -3,7 +3,7 @@
 This is some challenges I created for CTF competitions.
 
 > The difficulty is rated by me, and it is only consistent within a single competition.
-> Don't be surprised if you find a challenge with lower rating that is harder than a challenge with higher rating.
+> While I tried to keep it consistent by it does not really work :disappointed:, so don't be surprised if you find a challenge with lower rating that is harder than a challenge with higher rating.
 
 ## TSJ CTF 2022
 
