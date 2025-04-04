@@ -243,6 +243,12 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | -------------------------------------- | -------- | ------------------- | ---------- |
 | [MLFSR](<ImaginaryCTF/Round 54/MLFSR>) | Crypto   | Stern's Attack, LLL | ★★★        |
 
+### Round 55
+
+| Name                                           | Category | Tags                | Difficulty |
+| ---------------------------------------------- | -------- | ------------------- | ---------- |
+| [MagicHash](<ImaginaryCTF/Round 55/MagicHash>) | Crypto   | CRC, MD5, Collision | ★★         |
+
 ## AIS3 Pre-exam 2022
 
 | Name                                                                | Category | Tags                                        | Difficulty |

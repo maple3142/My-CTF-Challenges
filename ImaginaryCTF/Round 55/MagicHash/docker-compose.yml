@@ -1,0 +1,8 @@
+services:
+  chall:
+    build: .
+    privileged: true
+    ports:
+      - "1337:5000"
+    environment:
+      - JAIL_ENV_FLAG=ictf{easy_peasy_hash_collision_from_linearity}
