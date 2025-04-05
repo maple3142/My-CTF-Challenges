@@ -53,7 +53,7 @@ while len(skips) < N:
             zeros.append(c ^ t)
         print(new_skips)
         print("solving...")
-        space = lin.solve_space(zeros)
+        space = lin.solve_raw_space(zeros)
         if not space:
             continue
         break
