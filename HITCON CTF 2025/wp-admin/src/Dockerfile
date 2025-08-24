@@ -1,0 +1,18 @@
+FROM wordpress:6.8.2
+
+ARG WORDPRESS_DB_HOST
+ARG WORDPRESS_DB_USER
+ARG WORDPRESS_DB_PASSWORD
+ARG WORDPRESS_DB_NAME
+ENV WORDPRESS_DB_HOST=$WORDPRESS_DB_HOST
+ENV WORDPRESS_DB_USER=$WORDPRESS_DB_USER
+ENV WORDPRESS_DB_PASSWORD=$WORDPRESS_DB_PASSWORD
+ENV WORDPRESS_DB_NAME=$WORDPRESS_DB_NAME
+
+COPY install.php /usr/src/wordpress/wp-admin/
+COPY setup-wordpress /usr/local/bin/
+RUN setup-wordpress apache2-foreground
+COPY readflag /readflag
+RUN chmod 111 /readflag
+
+ENTRYPOINT ["apache2-foreground"]

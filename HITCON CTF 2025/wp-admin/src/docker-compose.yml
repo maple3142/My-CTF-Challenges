@@ -1,0 +1,39 @@
+services:
+    db:
+        image: mariadb:11
+        environment:
+            MYSQL_ROOT_PASSWORD: rootpass
+            MYSQL_DATABASE: wordpress
+            MYSQL_USER: user
+            MYSQL_PASSWORD: pass
+        volumes:
+            - db_data:/var/lib/mysql
+        healthcheck:
+            test: ['CMD', 'healthcheck.sh', '--connect', '--innodb_initialized']
+            start_period: 5s
+            start_interval: 1s
+            interval: 10s
+            timeout: 5s
+            retries: 55
+
+    wordpress:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                WORDPRESS_DB_HOST: db
+                WORDPRESS_DB_USER: user
+                WORDPRESS_DB_PASSWORD: pass
+                WORDPRESS_DB_NAME: wordpress
+        image: wp-admin
+        volumes:
+          - wp_data:/var/www/html:ro
+        ports:
+            - '${PORT:-8000}:80'
+        depends_on:
+            db:
+                condition: service_healthy
+
+volumes:
+    db_data:
+    wp_data:

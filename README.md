@@ -63,6 +63,16 @@ This is some challenges I created for CTF competitions.
 | [Truth of NPM](<HITCON CTF 2024/Truth of NPM>)           | Web      | Deno, LFI, RCE          | ★★★        |
 | [Private Browsing+](<HITCON CTF 2024/Private Browsing+>) | Web      | XSS, Response Splitting | ★★★★       |
 
+## HITCON CTF 2025
+
+| Name                                   | Category | Tags          | Difficulty |
+| -------------------------------------- | -------- | ------------- | ---------- |
+| [wp-admin](<HITCON CTF 2025/wp-admin>) | Web      | PHP, LFI, RCE | ★★★★       |
+| [Pedantic](<HITCON CTF 2025/Pedantic>) | Crypto   | ZKP, LLL      | ★★★        |
+| [BabyLWE](<HITCON CTF 2025/BabyLWE>)   | Crypto   | LWE           | ★★★☆       |
+| [MRSA](<HITCON CTF 2025/MRSA>)         | Crypto   | RSA, LLL      | ★★★☆       |
+| [Paranoid](<HITCON CTF 2025/Paranoid>) | Crypto   | ZKP, k-list   | ★★★★       |
+
 ## ImaginaryCTF 2023
 
 | Name                                                       | Category | Tags               | Difficulty |
