@@ -13,7 +13,7 @@ from server import (
     serialize_proof,
     verify,
 )
-from lll_cvp import reduce_mod_p, kannan_cvp
+from lll_cvp import kannan_cvp, qary_lattice
 
 from pwn import process, remote
 
@@ -44,10 +44,10 @@ rhs = vector(F, [c])
 
 # we want to find a short, positive solution to L * ? = rhs
 s0 = L.solve_right(rhs).change_ring(ZZ)
-ker = reduce_mod_p(L.right_kernel_matrix(), q)
+ker = L.right_kernel_matrix()
 # solution has form s0 + x * ker ~= [20] * m
 # so we compute cvp(ker, [20] * m - s0), and add s0 back
-t = s0 + kannan_cvp(ker, vector([20] * m) - s0)
+t = s0 + kannan_cvp(qary_lattice(ker, q), vector([20] * m) - s0)
 print(t, sum(t))
 assert L * t == rhs
 assert all([x >= 0 for x in t])
