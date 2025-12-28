@@ -315,6 +315,15 @@ These two challenges are created before I became a board of ImaginaryCTF.
 | [prsa](<AIS3 EOF 2025/prsa>)   | Crypto   | RSA, Paillier | ★★         |
 | [zkdlp](<AIS3 EOF 2025/zkdlp>) | Crypto   | ZKP, MT19937  | ★★☆        |
 
+## AIS3 EOF 2026
+
+| Name                                                 | Category | Tags       | Difficulty |
+| ---------------------------------------------------- | -------- | ---------- | ---------- |
+| [Still Not Random](<AIS3 EOF 2026/Still Not Random>) | Crypto   | LLL, ECDSA | ★★         |
+| [65537](<AIS3 EOF 2026/65537>)                       | Crypto   | LLL, RSA   | ★★☆        |
+| [LOL](<AIS3 EOF 2026/LOL>)                           | Crypto   | LFSR, GF   | ★★☆        |
+
+
 ## Security BSides Ahmedabad CTF 2022
 
 | Name                                                                      | Category | Tags | Difficulty |
